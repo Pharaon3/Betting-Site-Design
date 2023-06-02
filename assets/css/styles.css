@@ -458,11 +458,17 @@ input:focus {
   font-size: 16px;
   padding: 10px 20px;
   width: 100%;
-  margin: 2px 5px;
+  margin: 2px 2px;
+  text-align: center;
 }
 
 .bettable01-betbutton:hover {
   background-color: #333;
+  color: #eee;
+}
+
+.bettable01-betbutton:active {
+  background-color: #222;
   color: #eee;
 }
 
@@ -505,4 +511,16 @@ input:focus {
   height: 40px;
   display: flex;
   align-items: center;
+}
+.accordion-item {
+  background-color: #111;
+  color: white;
+}
+.accordion-button {
+  background-color: #111;
+  color: white;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #111;
+  color: white;
 }
