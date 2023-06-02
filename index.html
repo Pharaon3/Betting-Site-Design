@@ -27,6 +27,18 @@
     <header class="header sticky" id="header">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
+          <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#sidebarMenu"
+                  aria-controls="sidebarMenu"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  onclick="toggle()"
+                  >
+            <i class="fas fa-bars"></i>
+          </button>
           <a class="navbar-brand" href="#"
             ><img class="logo" src="./assets/img/logo.png"
           /></a>
@@ -76,9 +88,52 @@
       </nav>
     </header>
 
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-dark">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a
+            href="#"
+            class="list-group-item list-group-item-action py-2 ripple"
+            aria-current="true"
+          >
+            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Popular</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+            <i class="fas fa-chart-area fa-fw me-3"></i><span>Webiste traffic</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-lock fa-fw me-3"></i><span>Password</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-chart-line fa-fw me-3"></i><span>Analytics</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+            <i class="fas fa-chart-pie fa-fw me-3"></i><span>SEO</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Orders</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-globe fa-fw me-3"></i><span>International</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-building fa-fw me-3"></i><span>Partners</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-calendar fa-fw me-3"></i><span>Calendar</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-users fa-fw me-3"></i><span>Users</span></a
+          >
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+            ><i class="fas fa-money-bill fa-fw me-3"></i><span>Sales</span></a
+          >
+        </div>
+      </div>
+    </nav>
     <main class="main">
       <div class="row" style="margin: 0px">
-        <div class="col-12 col-md-2 no-margin">
+        <!-- <div class="col-12 col-md-2 no-margin">
           <div class="sidebar">
             <div id="popularGames">
               <div class="sidebar-menus">
@@ -170,8 +225,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
+        </div> -->
+        <div class="col-12 col-md-8">
           <div class="sticky60">
             <div class="adcards">
               <div class="AdHeader">
@@ -212,119 +267,133 @@
             </div>
             <div class="moneyLine">Moneyline</div>
             <div class="moneyLine-table">
-              <div class="accordion">
-                <div class="accordionItem">
-                  <div class="accordion-header">
-                    MLB
-                    <span>
-                      <i class="fa fa-chevron-up" aria-hidden="true"> </i>
-                    </span>
-                    <span>
-                      <i class="fa fa-chevron-down" aria-hidden="true"> </i>
-                    </span>
-                  </div>
-                  <div class="accordion-content">
-                    <div>
-                      <div class="bettable01">
-                        <div class="bettable01-teamNames">
-                          <div>MIA Marlins (Home team)</div>
-                          <div>COL Rockies (Away team)</div>
-                        </div>
-                        <div class="bettable01-score">
-                          <div>3</div>
-                          <div>5</div>
-                        </div>
-                        <div class="bettable01-betbuttons">
-                          <div class="around">
-                            <div class="bettable01-betbutton">+1.5</div>
-                            <div class="bettable01-betbutton">+235</div>
-                          </div>
-                          <div class="around">
-                            <div class="bettable01-betbutton">-1.5</div>
-                            <div class="bettable01-betbutton">-300</div>
-                          </div>
-                        </div>
-                        <div class="bettable01-betbuttons">
-                          <div class="around">
-                            <div class="bettable01-betbutton">+1.5</div>
-                            <div class="bettable01-betbutton">+235</div>
-                          </div>
-                          <div class="around">
-                            <div class="bettable01-betbutton">-1.5</div>
-                            <div class="bettable01-betbutton">-300</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="bettable01">
-                        <div class="bettable01-teamNames">
-                          <div>MIA Marlins (Home team)</div>
-                          <div>COL Rockies (Away team)</div>
-                        </div>
-                        <div class="bettable01-score">
-                          <div>3</div>
-                          <div>5</div>
-                        </div>
-                        <div class="bettable01-betbuttons">
-                          <div class="around">
-                            <div class="bettable01-betbutton">+1.5</div>
-                            <div class="bettable01-betbutton">+235</div>
-                          </div>
-                          <div class="around">
-                            <div class="bettable01-betbutton">-1.5</div>
-                            <div class="bettable01-betbutton">-300</div>
-                          </div>
-                        </div>
-                        <div class="bettable01-betbuttons">
-                          <div class="around">
-                            <div class="bettable01-betbutton">+1.5</div>
-                            <div class="bettable01-betbutton">+235</div>
-                          </div>
-                          <div class="around">
-                            <div class="bettable01-betbutton">-1.5</div>
-                            <div class="bettable01-betbutton">-300</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
+                      MLB
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <div>
+                        <div class="bettable01">
+                          <div class="bettable01-teamNames">
+                            <div>MIA Marlins (Home team)</div>
+                            <div>COL Rockies (Away team)</div>
+                          </div>
+                          <div class="bettable01-score">
+                            <div>3</div>
+                            <div>5</div>
+                          </div>
+                          <div class="bettable01-betbuttons">
+                            <div class="around">
+                              <div class="bettable01-betbutton">+1.5</div>
+                              <div class="bettable01-betbutton">+235</div>
+                            </div>
+                            <div class="around">
+                              <div class="bettable01-betbutton">-1.5</div>
+                              <div class="bettable01-betbutton">-300</div>
+                            </div>
+                          </div>
+                          <div class="bettable01-betbuttons">
+                            <div class="around">
+                              <div class="bettable01-betbutton">+1.5</div>
+                              <div class="bettable01-betbutton">+235</div>
+                            </div>
+                            <div class="around">
+                              <div class="bettable01-betbutton">-1.5</div>
+                              <div class="bettable01-betbutton">-300</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
+                      MLB1
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <div>
+                        <div class="bettable01">
+                          <div class="bettable01-teamNames">
+                            <div>MIA Marlins (Home team)</div>
+                            <div>COL Rockies (Away team)</div>
+                          </div>
+                          <div class="bettable01-score">
+                            <div>3</div>
+                            <div>5</div>
+                          </div>
+                          <div class="bettable01-betbuttons">
+                            <div class="around">
+                              <div class="bettable01-betbutton">+1.5</div>
+                              <div class="bettable01-betbutton">+235</div>
+                            </div>
+                            <div class="around">
+                              <div class="bettable01-betbutton">-1.5</div>
+                              <div class="bettable01-betbutton">-300</div>
+                            </div>
+                          </div>
+                          <div class="bettable01-betbuttons">
+                            <div class="around">
+                              <div class="bettable01-betbutton">+1.5</div>
+                              <div class="bettable01-betbutton">+235</div>
+                            </div>
+                            <div class="around">
+                              <div class="bettable01-betbutton">-1.5</div>
+                              <div class="bettable01-betbutton">-300</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
+                      MLB2
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <div>
+                        <div class="bettable01">
+                          <div class="bettable01-teamNames">
+                            <div>MIA Marlins (Home team)</div>
+                            <div>COL Rockies (Away team)</div>
+                          </div>
+                          <div class="bettable01-score">
+                            <div>3</div>
+                            <div>5</div>
+                          </div>
+                          <div class="bettable01-betbuttons">
+                            <div class="around">
+                              <div class="bettable01-betbutton">+1.5</div>
+                              <div class="bettable01-betbutton">+235</div>
+                            </div>
+                            <div class="around">
+                              <div class="bettable01-betbutton">-1.5</div>
+                              <div class="bettable01-betbutton">-300</div>
+                            </div>
+                          </div>
+                          <div class="bettable01-betbuttons">
+                            <div class="around">
+                              <div class="bettable01-betbutton">+1.5</div>
+                              <div class="bettable01-betbutton">+235</div>
+                            </div>
+                            <div class="around">
+                              <div class="bettable01-betbutton">-1.5</div>
+                              <div class="bettable01-betbutton">-300</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
