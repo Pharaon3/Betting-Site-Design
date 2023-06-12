@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="./assets/js/controller.js" ></script>
+    <script src="./assets/js/controller.js"></script>
     <title>EZ Live</title>
   </head>
   <body>
@@ -79,11 +79,7 @@
     </header>
 
     <div id="sidebartoggle" class="sidebartoggle">
-      <button
-        class="sidebar-toggler"
-        type="button"
-        onclick="toggle()"
-        >
+      <button class="sidebar-toggler" type="button" onclick="toggle()">
         A-Z Sports <i class="fas fa-angle-down"></i>
       </button>
     </div>
@@ -91,20 +87,91 @@
     <nav id="sidebarMenu" class="collapse d-lg-block sidebar bg-dark">
       <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
-          <a href="#" class="list-group-item py-2 ripple" aria-current="true" >
+          <a
+            href="#"
+            class="list-group-item py-2 ripple"
+            aria-current="true"
+            onclick="collapse('popularMenus1')"
+          >
             <i class="fas fa-users fa-fw me-3"></i><span>Popular</span>
           </a>
-          <div id="popularMenus" class="sidebar-menu">
-            <div>NBA</div>
-            <div>NHL</div>
+          <div id="popularMenus1" class=" ">
+            <div onclick="collapse('basketball')" class="sidebar-menu-button">Basketball</div>
+              <div id="basketball" class="sidebar-menu">
+                <div>NBA</div>
+                <div>WNBA</div>
+                <div>Turkey-BSL</div>
+                <div>College Basketball (M)</div>
+              </div>
+            </div>
+            <div id="popularMenus1" class=" ">
+              <div onclick="collapse('basketball')" class="sidebar-menu-button">Basketball</div>
+                <div id="basketball" class="sidebar-menu">
+                  <div>NBA</div>
+                  <div>WNBA</div>
+                  <div>Turkey-BSL</div>
+                  <div>College Basketball (M)</div>
+                </div>
+              </div>
+              <div id="popularMenus1" class=" ">
+                <div onclick="collapse('basketball')" class="sidebar-menu-button">Basketball</div>
+                  <div id="basketball" class="sidebar-menu">
+                    <div>NBA</div>
+                    <div>WNBA</div>
+                    <div>Turkey-BSL</div>
+                    <div>College Basketball (M)</div>
+                  </div>
+                </div>
+                <div id="popularMenus1" class=" ">
+                  <div onclick="collapse('basketball')" class="sidebar-menu-button">Basketball</div>
+                    <div id="basketball" class="sidebar-menu">
+                      <div>NBA</div>
+                      <div>WNBA</div>
+                      <div>Turkey-BSL</div>
+                      <div>College Basketball (M)</div>
+                    </div>
+                  </div>
+                  <div id="popularMenus1" class=" ">
+                    <div onclick="collapse('basketball')" class="sidebar-menu-button">Basketball</div>
+                      <div id="basketball" class="sidebar-menu">
+                        <div>NBA</div>
+                        <div>WNBA</div>
+                        <div>Turkey-BSL</div>
+                        <div>College Basketball (M)</div>
+                      </div>
+                    </div>
+                    <div id="popularMenus1" class=" ">
+                      <div onclick="collapse('basketball')" class="sidebar-menu-button">Basketball</div>
+                        <div id="basketball" class="sidebar-menu">
+                          <div>NBA</div>
+                          <div>WNBA</div>
+                          <div>Turkey-BSL</div>
+                          <div>College Basketball (M)</div>
+                        </div>
+                      </div>
+            <div onclick="collapse('Football')" class="sidebar-menu-button">Football</div>
+            <div id="Football" class="sidebar-menu">
+              <div>NBA</div>
+              <div>WNBA</div>
+              <div>Turkey-BSL</div>
+              <div>College Football (M)</div>
+            </div>
+            <div onclick="collapse('Volleyball')" class="sidebar-menu-button">Volleyball</div>
+            <div id="Volleyball" class="sidebar-menu">
+              <div>NBA</div>
+              <div>WNBA</div>
+              <div>Turkey-BSL</div>
+              <div>College Volleyball (M)</div>
+            </div>
+            <!-- <div>NHL</div>
             <div>MLB</div>
             <div>NFL</div>
             <div>French Open Qual.(M)</div>
             <div>Boxing</div>
             <div>USA-MLS</div>
-            <div>Champions League</div>
+            <div>Champions League</div> -->
           </div>
-          <a href="#" class="list-group-item py-2 ripple" aria-current="false" >
+          <a href="#" class="list-group-item py-2 ripple" aria-current="false">
             <i class="fas fa-users fa-fw me-3"></i><span>Popular</span>
           </a>
           <div id="popularMenus" class="sidebar-menu">
@@ -123,99 +190,6 @@
 
     <main class="main">
       <div class="row" style="margin: 0px">
-        <!-- <div class="col-12 col-md-2 no-margin">
-          <div class="sidebar">
-            <div id="popularGames">
-              <div class="sidebar-menus">
-                <div class="sidebar-title">Popular</div>
-                <div id="popularMenus" class="sidebar-menu">
-                  <div>NBA</div>
-                  <div>NHL</div>
-                  <div>MLB</div>
-                  <div>NFL</div>
-                  <div>French Open Qual.(M)</div>
-                  <div>Boxing</div>
-                  <div>USA-MLS</div>
-                  <div>Champions League</div>
-                </div>
-              </div>
-              <div class="sidebar-menus sidebar-title">Sports teams</div>
-              <div class="sidebar-menus">
-                <div class="sidebar-title">A-Z Sports</div>
-                <div id="popularMenus" class="sidebar-menu">
-                  <div>aussie rules</div>
-                  <div>baseball</div>
-                  <div>basketball</div>
-                  <div>boxing</div>
-                  <div>cricket Open Qual.(M)</div>
-                  <div>Boxing</div>
-                  <div>cycling</div>
-                  <div>darts</div>
-                  <div>football</div>
-                  <div>golf</div>
-                </div>
-              </div>
-              <div class="sidebar-menus">
-                <div class="sidebar-title">Popular</div>
-                <div id="popularMenus" class="sidebar-menu">
-                  <div>NBA</div>
-                  <div>NHL</div>
-                  <div>MLB</div>
-                  <div>NFL</div>
-                  <div>French Open Qual.(M)</div>
-                  <div>Boxing</div>
-                  <div>USA-MLS</div>
-                  <div>Champions League</div>
-                </div>
-              </div>
-              <div class="sidebar-menus sidebar-title">Sports teams</div>
-              <div class="sidebar-menus">
-                <div class="sidebar-title">A-Z Sports</div>
-                <div id="popularMenus" class="sidebar-menu">
-                  <div>aussie rules</div>
-                  <div>baseball</div>
-                  <div>basketball</div>
-                  <div>boxing</div>
-                  <div>cricket Open Qual.(M)</div>
-                  <div>Boxing</div>
-                  <div>cycling</div>
-                  <div>darts</div>
-                  <div>football</div>
-                  <div>golf</div>
-                </div>
-              </div>
-              <div class="sidebar-menus">
-                <div class="sidebar-title">Popular</div>
-                <div id="popularMenus" class="sidebar-menu">
-                  <div>NBA</div>
-                  <div>NHL</div>
-                  <div>MLB</div>
-                  <div>NFL</div>
-                  <div>French Open Qual.(M)</div>
-                  <div>Boxing</div>
-                  <div>USA-MLS</div>
-                  <div>Champions League</div>
-                </div>
-              </div>
-              <div class="sidebar-menus sidebar-title">Sports teams</div>
-              <div class="sidebar-menus">
-                <div class="sidebar-title">A-Z Sports</div>
-                <div id="popularMenus" class="sidebar-menu">
-                  <div>aussie rules</div>
-                  <div>baseball</div>
-                  <div>basketball</div>
-                  <div>boxing</div>
-                  <div>cricket Open Qual.(M)</div>
-                  <div>Boxing</div>
-                  <div>cycling</div>
-                  <div>darts</div>
-                  <div>football</div>
-                  <div>golf</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="col-12 col-md-8">
           <div class="sticky60">
             <div class="adcards">
@@ -246,7 +220,7 @@
                 <div class="main-table-header">STATS HUB</div>
               </div>
               <div class="divider"></div>
-              <div style="display: flex; overflow: hidden;">
+              <div style="display: flex; overflow: hidden">
                 <div class="main-table-roundButton active">tennis</div>
                 <div class="main-table-roundButton">basketball</div>
                 <div class="main-table-roundButton">soccer</div>
@@ -260,18 +234,32 @@
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
                       MLB
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
                     <div class="accordion-body">
                       <div>
                         <div class="bettable01">
                           <table>
                             <tbody>
                               <tr>
-                                <td class="tableheader">MIA Marlins (Home team)</td>
+                                <td class="tableheader">
+                                  MIA Marlins (Home team)
+                                </td>
                                 <td class="tableval">3</td>
                                 <td>+1.5</td>
                                 <td>-1.5</td>
@@ -279,7 +267,9 @@
                                 <td>-1.5</td>
                               </tr>
                               <tr>
-                                <td class="tableheader">COL Rockies (Away team)</td>
+                                <td class="tableheader">
+                                  COL Rockies (Away team)
+                                </td>
                                 <td class="tableval">5</td>
                                 <td>+2355</td>
                                 <td>-300</td>
@@ -289,12 +279,14 @@
                             </tbody>
                           </table>
                         </div>
-                        <div class="horizontalDivider" ></div>
+                        <div class="horizontalDivider"></div>
                         <div class="bettable01">
                           <table>
                             <tbody>
                               <tr>
-                                <td class="tableheader">MIA Marlins (Home team)</td>
+                                <td class="tableheader">
+                                  MIA Marlins (Home team)
+                                </td>
                                 <td class="tableval">3</td>
                                 <td>+1.5</td>
                                 <td>-1.5</td>
@@ -302,7 +294,9 @@
                                 <td>-1.5</td>
                               </tr>
                               <tr>
-                                <td class="tableheader">COL Rockies (Away team)</td>
+                                <td class="tableheader">
+                                  COL Rockies (Away team)
+                                </td>
                                 <td class="tableval">5</td>
                                 <td>+2355</td>
                                 <td>-300</td>
@@ -312,12 +306,14 @@
                             </tbody>
                           </table>
                         </div>
-                        <div class="horizontalDivider" ></div>
+                        <div class="horizontalDivider"></div>
                         <div class="bettable01">
                           <table>
                             <tbody>
                               <tr>
-                                <td class="tableheader">MIA Marlins (Home team)</td>
+                                <td class="tableheader">
+                                  MIA Marlins (Home team)
+                                </td>
                                 <td class="tableval">3</td>
                                 <td>+1.5</td>
                                 <td>-1.5</td>
@@ -325,7 +321,9 @@
                                 <td>-1.5</td>
                               </tr>
                               <tr>
-                                <td class="tableheader">COL Rockies (Away team)</td>
+                                <td class="tableheader">
+                                  COL Rockies (Away team)
+                                </td>
                                 <td class="tableval">5</td>
                                 <td>+2355</td>
                                 <td>-300</td>
@@ -341,18 +339,32 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
                       MLB1
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
                     <div class="accordion-body">
                       <div>
                         <div class="bettable01">
                           <table>
                             <tbody>
                               <tr>
-                                <td class="tableheader">MIA Marlins (Home team)</td>
+                                <td class="tableheader">
+                                  MIA Marlins (Home team)
+                                </td>
                                 <td class="tableval">3</td>
                                 <td>+1.5</td>
                                 <td>-1.5</td>
@@ -360,7 +372,9 @@
                                 <td>-1.5</td>
                               </tr>
                               <tr>
-                                <td class="tableheader">COL Rockies (Away team)</td>
+                                <td class="tableheader">
+                                  COL Rockies (Away team)
+                                </td>
                                 <td class="tableval">5</td>
                                 <td>+2355</td>
                                 <td>-300</td>
@@ -376,18 +390,32 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
                       MLB2
                     </button>
                   </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
                     <div class="accordion-body">
                       <div>
                         <div class="bettable01">
                           <table>
                             <tbody>
                               <tr>
-                                <td class="tableheader">MIA Marlins (Home team)</td>
+                                <td class="tableheader">
+                                  MIA Marlins (Home team)
+                                </td>
                                 <td class="tableval">3</td>
                                 <td>+1.5</td>
                                 <td>-1.5</td>
@@ -395,7 +423,9 @@
                                 <td>-1.5</td>
                               </tr>
                               <tr>
-                                <td class="tableheader">COL Rockies (Away team)</td>
+                                <td class="tableheader">
+                                  COL Rockies (Away team)
+                                </td>
                                 <td class="tableval">5</td>
                                 <td>+2355</td>
                                 <td>-300</td>
@@ -411,18 +441,32 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
                       MLB2
                     </button>
                   </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
                     <div class="accordion-body">
                       <div>
                         <div class="bettable01">
                           <table>
                             <tbody>
                               <tr>
-                                <td class="tableheader">MIA Marlins (Home team)</td>
+                                <td class="tableheader">
+                                  MIA Marlins (Home team)
+                                </td>
                                 <td class="tableval">3</td>
                                 <td>+1.5</td>
                                 <td>-1.5</td>
@@ -430,7 +474,9 @@
                                 <td>-1.5</td>
                               </tr>
                               <tr>
-                                <td class="tableheader">COL Rockies (Away team)</td>
+                                <td class="tableheader">
+                                  COL Rockies (Away team)
+                                </td>
                                 <td class="tableval">5</td>
                                 <td>+2355</td>
                                 <td>-300</td>
@@ -446,18 +492,32 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
                       MLB2
                     </button>
                   </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
                     <div class="accordion-body">
                       <div>
                         <div class="bettable01">
                           <table>
                             <tbody>
                               <tr>
-                                <td class="tableheader">MIA Marlins (Home team)</td>
+                                <td class="tableheader">
+                                  MIA Marlins (Home team)
+                                </td>
                                 <td class="tableval">3</td>
                                 <td>+1.5</td>
                                 <td>-1.5</td>
@@ -465,7 +525,9 @@
                                 <td>-1.5</td>
                               </tr>
                               <tr>
-                                <td class="tableheader">COL Rockies (Away team)</td>
+                                <td class="tableheader">
+                                  COL Rockies (Away team)
+                                </td>
                                 <td class="tableval">5</td>
                                 <td>+2355</td>
                                 <td>-300</td>
@@ -518,7 +580,7 @@
                 </div>
                 <div class="betcard">
                   <div class="flex" style="align-items: baseline">
-                    <div style="cursor: pointer;">
+                    <div style="cursor: pointer">
                       <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
                     <div style="text-align: left; padding-left: 10px">

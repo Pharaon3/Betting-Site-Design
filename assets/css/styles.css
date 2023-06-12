@@ -541,6 +541,7 @@ input:focus {
 
 .sidebar {
   position: fixed;
+  overflow: auto;
   top: 0;
   bottom: 0;
   left: 0;
@@ -622,4 +623,18 @@ input:focus {
   background-color: transparent !important;
   cursor: initial !important;
   color: #ff7;
+}
+.sidebar-collapsed{
+  display: none;
+}
+
+.sidebar-menu-button {
+  text-align: left;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.sidebar-menu-button:hover {
+  background-color: #111;
 }
