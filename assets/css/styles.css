@@ -132,17 +132,19 @@ body {
 }
 .middle-content {
   width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .right-content {
   width: 375px;
 }
 .middle-content > div {
-  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
   background: #1c2023;
 }
 .right-content > div {
-  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
   background: #1c2023;
 }
@@ -162,7 +164,7 @@ body {
   text-align: right;
 }
 .right-content-header-p {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -184,10 +186,10 @@ body {
   width: 76px;
   height: 30px;
 
-  background: #6FE0EF;
+  background: #6fe0ef;
   border-radius: 5px;
-  
-  font-family: 'OpenSansbold';
+
+  font-family: "OpenSansbold";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -211,7 +213,7 @@ body {
 .round-number {
   width: 24px;
   height: 24px;
-  background: #6FE0EF;
+  background: #6fe0ef;
   border-radius: 30px;
   color: black;
   display: flex;
@@ -220,7 +222,7 @@ body {
 }
 .bet-slip {
   margin-left: 8px;
-  font-family: 'Rowdies';
+  font-family: "Rowdies";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -231,7 +233,7 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .right-title {
   display: flex;
@@ -240,7 +242,7 @@ body {
   display: flex;
 }
 .clear-all-title {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -250,7 +252,7 @@ body {
   display: flex;
   align-items: center;
 
-  color: #4D4D4D;
+  color: #4d4d4d;
   margin-right: 17px;
 }
 .bet-slip-card {
@@ -274,7 +276,7 @@ body {
   height: 34px;
   border-bottom: 2px solid rgba(218, 218, 218, 0.1);
 
-  font-family: 'Rowdies';
+  font-family: "Rowdies";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -285,7 +287,7 @@ body {
   align-items: center;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .betslip-card-container {
   display: flex;
@@ -294,7 +296,7 @@ body {
   padding: 12px 5px 13px;
 
   width: 353px;
-  
+
   background: rgba(255, 255, 255, 0.15);
   border-radius: 5px;
 }
@@ -319,7 +321,7 @@ body {
   display: flex;
 }
 .single-card-heading {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -331,7 +333,7 @@ body {
   margin-left: 8.5px;
 }
 .single-card-title {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -346,7 +348,7 @@ body {
   margin-top: 7px;
 }
 .single-card-content {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -380,7 +382,7 @@ body {
   height: 36px; */
 }
 .payout {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -391,14 +393,14 @@ body {
   align-items: center;
   text-align: right;
 
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 4px;
 }
 .betslip-odds {
   display: flex;
 }
 .OpenSansregular {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -410,7 +412,6 @@ body {
 
   /* color: #000000; */
   margin-left: 4px;
-
 }
 .betslip-wager-box {
   box-sizing: border-box;
@@ -423,7 +424,7 @@ body {
   border-radius: 6px;
 }
 .currency-simbol {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -442,7 +443,7 @@ input {
   font-size: 14px;
   background-color: transparent;
   color: white;
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -474,7 +475,7 @@ input:focus {
   border-radius: 5px;
 }
 .betslip-all-singles-title {
-  font-family: 'OpenSansregular';
+  font-family: "OpenSansregular";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -485,5 +486,138 @@ input:focus {
   display: flex;
   align-items: center;
 
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.betslip-parley {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 5px;
+  isolation: isolate;
+  width: 100%;
+}
+.parley-tab {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+
+  border-bottom: 2px solid rgba(218, 218, 218, 0.1);
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #6f6f6f;
+}
+
+.parley-active {
+  border-bottom: 2px solid #efce6f;
+  color: #ffffff;
+}
+.parley-warning {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 154% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ababab;
+  /* margin-top: 10px; */
+}
+.bet-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 5.5px 83.49px 6.5px 84.51px; */
+
+  height: 56px;
+
+  background: #efce6f;
+  border-radius: 5px;
+  margin-left: 17px;
+  margin-right: 17px;
+  /* margin-bottom: 17px; */
+  cursor: pointer;
+}
+.bet-button-heading {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #121212;
+}
+.bet-button-content {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #121212;
+}
+.middle-content-header {
+  padding: 30px 70px;
+}
+.head-menus{
+  display: flex;
+}
+.head-menus > div {
+  margin: 0px 15px;
+  padding-bottom: 12.75px;
+}
+.divide-horizontal {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+.head-menu-active {
+  color: #EFCE6F;
+  border-bottom: 2px solid #efce6f;
+}
+.middle-content-body {
+  padding: 20px 86px;
+}
+.game-title {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #C5C5C5;
+
 }
