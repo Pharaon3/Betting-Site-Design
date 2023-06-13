@@ -398,7 +398,6 @@ body {
   display: flex;
 }
 .odds-span {
-  background: #EFCE6F;
   font-family: 'OpenSansregular';
   font-style: normal;
   font-weight: 700;
@@ -409,7 +408,7 @@ body {
   display: flex;
   align-items: center;
 
-  color: #000000;
+  /* color: #000000; */
   margin-left: 4px;
 
 }
