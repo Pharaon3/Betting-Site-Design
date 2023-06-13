@@ -240,7 +240,7 @@ body {
   display: flex;
 }
 .clear-all-title {
-  font-family: 'Open Sans';
+  font-family: 'OpenSansregular';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -286,4 +286,177 @@ body {
   text-transform: uppercase;
 
   color: #FFFFFF;
+}
+.betslip-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 5px 13px;
+
+  width: 353px;
+  
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+.betslip-card-container-wrap {
+  width: 343px;
+  height: 72.23px;
+  display: flex;
+  align-items: baseline;
+}
+.single-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+  margin-left: 4px;
+}
+.single-card-header {
+  width: 178.55px;
+}
+.single-card-headings {
+  display: flex;
+}
+.single-card-heading {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  margin-left: 8.5px;
+}
+.single-card-title {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height, or 160% */
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  margin-top: 7px;
+}
+.single-card-content {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  /* or 160% */
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+}
+.single-card-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 0px 16px;
+  gap: 4px;
+
+  width: 140px;
+  height: 72px;
+}
+.bet-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  /* width: 145.45px;
+  height: 36px; */
+}
+.payout {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  /* identical to box height, or 160% */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #FFFFFF;
+  margin-top: 4px;
+}
+.betslip-odds {
+  display: flex;
+}
+.odds-span {
+  background: #EFCE6F;
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  margin-left: 4px;
+
+}
+.betslip-wager-box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 88px;
+  height: 36px;
+
+  border: 1px solid rgba(197, 197, 197, 0.2);
+  border-radius: 6px;
+}
+.currency-simbol {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  display: flex;
+  align-items: center;
+  margin-left: 11px;
+  color: rgba(197, 197, 197, 0.2);
+}
+input {
+  border-style: none;
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+}
+input:focus {
+  outline: none;
+}
+.bet-input {
+  width: 56.19px;
+  margin-right: 6.8px;
 }
