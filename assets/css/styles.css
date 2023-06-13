@@ -23,25 +23,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-.popular {
+.sidemenus > div {
   margin-top: 10px;
   border-radius: 10px;
   background: #1C2023;
 }
-.popular-header {
+.popular {
+}
+.sidemenus-header {
   padding-top: 14.5px;
   padding-left: 34.27px;
   padding-bottom: 14.5px;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeueCyr';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   text-transform: uppercase;
-  cursor: pointer;
-}
-.popular-header:hover {
-  color: #EFCE6F;
 }
 .popular-content {
   margin-top: 10.5px;
@@ -51,14 +49,83 @@ body {
 }
 .popular-content div {
   margin-bottom: 4px;
-  cursor: pointer;
   font-size: 13px;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeueCyr';
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
   line-height: 18px;
 }
-.popular-content div:hover {
+.sports-teams {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 38px;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+}
+.sidebutton {
+  cursor: pointer;
+}
+.sidebutton:hover {
   color: #EFCE6F;
+}
+.A-Z-sports{
+  padding-top: 16px;
+  padding-left: 27px;
+}
+.A-Z-sports-header {
+  padding-top: 16px;
+  padding-bottom: 19.5px;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.A-Z-sports-content {
+  padding-bottom: 16px;
+}
+.A-Z-sports-content > div {
+  margin-top: 14.5px;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #C5C5C5;
+}
+.playoff-pages-header {
+  padding-top: 18px;
+  padding-left: 34.27px;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.playoff-pages-content {
+  margin-top: 19px;
+  padding-left: 40px;
+}
+.playoff-pages-content > div{
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;  
+  color: #EDEDED;
+  padding-bottom: 20.5px;
 }
