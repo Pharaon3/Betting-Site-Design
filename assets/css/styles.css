@@ -43,3 +43,22 @@ body {
 .popular-header:hover {
   color: #EFCE6F;
 }
+.popular-content {
+  margin-top: 10.5px;
+  padding-top: 16px;
+  padding-left: 38px;
+  padding-bottom: 15px;
+}
+.popular-content div {
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+.popular-content div:hover {
+  color: #EFCE6F;
+}
