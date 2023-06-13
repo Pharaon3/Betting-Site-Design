@@ -5,9 +5,12 @@ body {
 }
 .main-content {
   margin-top: 10px;
-  margin-left: 9px;
-  margin-right: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
   display: flex;
+  max-width: 1668px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sidebar {
   color: white;
@@ -26,15 +29,13 @@ body {
 .sidemenus > div {
   margin-top: 10px;
   border-radius: 10px;
-  background: #1C2023;
-}
-.popular {
+  background: #1c2023;
 }
 .sidemenus-header {
   padding-top: 14.5px;
   padding-left: 34.27px;
   padding-bottom: 14.5px;
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -50,7 +51,7 @@ body {
 .popular-content div {
   margin-bottom: 4px;
   font-size: 13px;
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -61,7 +62,7 @@ body {
   padding-bottom: 12px;
   padding-left: 38px;
   text-transform: uppercase;
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -71,16 +72,16 @@ body {
   cursor: pointer;
 }
 .sidebutton:hover {
-  color: #EFCE6F;
+  color: #efce6f;
 }
-.A-Z-sports{
+.A-Z-sports {
   padding-top: 16px;
   padding-left: 27px;
 }
 .A-Z-sports-header {
   padding-top: 16px;
   padding-bottom: 19.5px;
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -93,19 +94,19 @@ body {
 .A-Z-sports-content > div {
   margin-top: 14.5px;
   text-transform: uppercase;
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   display: flex;
   align-items: center;
-  color: #C5C5C5;
+  color: #c5c5c5;
 }
 .playoff-pages-header {
   padding-top: 18px;
   padding-left: 34.27px;
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -118,14 +119,171 @@ body {
   margin-top: 19px;
   padding-left: 40px;
 }
-.playoff-pages-content > div{
-  font-family: 'HelveticaNeueCyr';
+.playoff-pages-content > div {
+  font-family: "HelveticaNeueCyr";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   display: flex;
-  align-items: center;  
-  color: #EDEDED;
+  align-items: center;
+  color: #ededed;
   padding-bottom: 20.5px;
+}
+.middle-content {
+  width: 100%;
+}
+.right-content {
+  width: 375px;
+}
+.middle-content > div {
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #1c2023;
+}
+.right-content > div {
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #1c2023;
+}
+.right-content-header {
+  width: 375px;
+  height: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+.right-content-header > div {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.right-content-header-p {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 25px;
+  /* identical to box height, or 227% */
+}
+.divide-vertical {
+  width: 1px;
+  height: 25px;
+  background-color: #4d4d4d;
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px 5px;
+
+  width: 76px;
+  height: 30px;
+
+  background: #6FE0EF;
+  border-radius: 5px;
+  
+  font-family: 'OpenSansbold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  cursor: pointer;
+}
+.right-content-body-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+
+  width: 375px;
+  height: 56px;
+}
+.round-number {
+  width: 24px;
+  height: 24px;
+  background: #6FE0EF;
+  border-radius: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bet-slip {
+  margin-left: 8px;
+  font-family: 'Rowdies';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+.right-title {
+  display: flex;
+}
+.clear-all {
+  display: flex;
+}
+.clear-all-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  display: flex;
+  align-items: center;
+
+  color: #4D4D4D;
+  margin-right: 17px;
+}
+.bet-slip-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 1px;
+  gap: 10px;
+  width: 353px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.betslip-section-heading {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 9px 8px 0px;
+  text-transform: uppercase;
+  width: 353px;
+  height: 34px;
+  border-bottom: 2px solid rgba(218, 218, 218, 0.1);
+
+  font-family: 'Rowdies';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
 }
