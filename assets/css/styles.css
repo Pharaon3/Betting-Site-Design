@@ -397,7 +397,7 @@ body {
 .betslip-odds {
   display: flex;
 }
-.odds-span {
+.OpenSansregular {
   font-family: 'OpenSansregular';
   font-style: normal;
   font-weight: 700;
@@ -458,4 +458,32 @@ input:focus {
 .bet-input {
   width: 56.19px;
   margin-right: 6.8px;
+}
+.betslip-all-singles {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 5px;
+  gap: 115px;
+
+  width: 353px;
+  height: 61px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+}
+.betslip-all-singles-title {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 18px;
+  /* identical to box height, or 167% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
 }
