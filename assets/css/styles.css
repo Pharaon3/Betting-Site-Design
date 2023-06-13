@@ -619,5 +619,219 @@ input:focus {
   align-items: center;
 
   color: #C5C5C5;
+}
+.table-header {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
+  display: flex;
+  align-items: center;
+
+  color: #C5C5C5;
+  justify-content: flex-end;
+  margin-top:49px;
+}
+.table-header > div {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+
+  color: #C5C5C5;
+}
+.nine2 {
+  width: 22.2%;
+}
+.bet-table{
+  padding-top: 12px;
+}
+.bet-table-timeinfo {
+  display: flex;
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  /* identical to box height */
+
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #C5C5C5;
+}
+.bet-table-row {
+  display: flex;
+  justify-content: space-between;
+}
+.nine3 {
+  width: 33.4%;
+  width: 35%;
+}
+.bet-table-row {
+  height: 44px;
+  margin: 1.5px 0px;
+}
+.bet-table-team {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.32px;
+
+  color: #FFFFFF;
+  padding-left: 30px;
+}
+.bet-table-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 177px;
+  height: 44px;
+
+  background: #272B2E;
+  border-radius: 10px;
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  margin: 0px 1.5px;
+}
+.bet-table-card > div {
+  margin: 0px 10px;
+}
+.bet-table-card-left{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+}
+
+.bet-table-card-right{
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+
+  color: #EFCE6F;
+}
+.footer {
+  margin-top: 10px;
+  background: #1C2023;
+  padding: 83px 37px 98px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-companyinfo {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.company-title {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+.company-location {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+  margin-top: 8.5px;
+}
+.link-icons {
+  margin-top: 16.5px;
+  display: flex;
+}
+.link-icons > * {
+  margin-right: 12px;
+}
+.footer-mark {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+
+  color: #C5C5C5;
+  margin-top: 266px;
+}
+.footer-title {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.footer-list {
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #C5C5C5;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.footer-list:hover {
+  color: #efce6f;
+}
+.footer-comment{
+  margin-top: 33px;
+  font-family: 'OpenSansregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #C5C5C5;
 }
