@@ -7,12 +7,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <link href="./assets/css/styles.css" rel="stylesheet" />
     <link href="./assets/font/stylesheet.css" rel="stylesheet" />
@@ -20,8 +18,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./assets/js/controller.js"></script>
     <title>EZ Live</title>
@@ -30,7 +27,10 @@
     <div id="main-content" class="main-content">
       <div id="sidebar" class="sidebar">
         <div id="logo" class="logo">
-          <img src="./assets/svg/logo.svg" >
+          <img src="./assets/svg/logo.svg" onclick="toggle()" >
+        </div>
+        <div id="minilogo" class="minilogo">
+          <img src="./assets/svg/minilogo.svg" onclick="toggle()">
         </div>
         <div id="sidemenus" class="sidemenus">
           <div id="popular" class="popular">
@@ -103,15 +103,19 @@
       </div>
       <div id="middle-content" class="middle-content">
         <div id="middle-content-header" class="middle-content-header">
-          <div class="head-menus">
-            <div>My Bets</div>
-            <div class="head-menu-active">Live In-Game</div>
-            <div>Promos</div>
-            <div>How To Bet</div>
-            <div>VIP</div>
-            <div>Pools</div>
-            <div>Social</div>
-            <div>Dynasty</div>
+          <div style="display: flex;">
+            <div class="head-menus-navIcon"><i class="fa fa-step-backward" aria-hidden="true"></i></div>
+            <div class="head-menus">
+              <div>My Bets</div>
+              <div class="head-menu-active">Live In-Game</div>
+              <div>Promos</div>
+              <div>How To Bet</div>
+              <div>VIP</div>
+              <div>Pools</div>
+              <div>Social</div>
+              <div>Dynasty</div>
+            </div>
+            <div class="head-menus-navIcon"><i class="fa fa-step-forward" aria-hidden="true"></i></div>
           </div>
           <div class="divide-horizontal"></div>
         </div>
@@ -370,12 +374,12 @@
         </div>
       </div>
       <div id="right-content" class="right-content">
-        <div id="right-content-header" class="right-content-header">
+        <div id="right-content-header" class="right-content-header" onclick="toggleBetslip()">
           <div class="right-content-header-p">Want to start placing bets?</div>
           <div class="divide-vertical"></div>
           <div id="login" class="login">Log In</div>
         </div>
-        <div id="right-content-body" class="right-content-body">
+        <div id="right-content-body" class="right-content-body mobile-hidden">
           <div id="right-content-body-title" class="right-content-body-title">
             <div id="right-title" class="right-title">
               <div id="round-box" class="round-number">2</div>
@@ -501,8 +505,8 @@
         </div>
       </div>
     </div>
-    <div id="footer" class="footer">
-      <div id="footer-companyinfo" class="footer-companyinfo">
+    <div id="footer" class="footer row">
+      <div id="footer-companyinfo" class="footer-companyinfo col-12 col-xs-6 col-sm-4 col-md-3 col-xl-2">
         <div>
           <div class="company-title">Sports Book Inc.</div>
           <div class="company-location">Istanbul, Turkiye</div>
@@ -517,7 +521,7 @@
           © 2023 Sports Book <br> All Rights Reserved.
         </div>
       </div>
-      <div id="aboutCompany">
+      <div id="aboutCompany" class="col-12 col-xs-6 col-sm-4  col-md-3 col-xl-2">
         <div class="footer-title">Company</div>
         <div class="footer-list">About DraftKings</div>
         <div class="footer-list">Careers</div>
@@ -537,7 +541,7 @@
         <div class="footer-list">DKNation Sports News</div>
         <div class="footer-list">Cookie Preferences</div>
       </div>
-      <div id="aboutSportsboodOdds">
+      <div id="aboutSportsboodOdds" class="col-12 col-xs-6 col-sm-4  col-md-3 col-xl-2">
         <div class="footer-title">SPORTSBOOK ODDS</div>
         <div class="footer-list">NFL Odds</div>
         <div class="footer-list">NBA Odds</div>
@@ -553,7 +557,7 @@
         <div class="footer-list">Super Bowl Odds</div>
         <div class="footer-list">NFL Playoffs Odds</div>
       </div>
-      <div id="aboutBettingGuides">
+      <div id="aboutBettingGuides" class="col-12 col-xs-6 col-sm-4  col-md-3 col-xl-2">
         <div class="footer-title">BETTING GUIDES</div>
         <div class="footer-list">How to Bet on Football</div>
         <div class="footer-list">How to Bet on Basketball</div>
@@ -563,7 +567,7 @@
         <div class="footer-list">How to Bet on Golf</div>
         <div class="footer-list">How to Bet on Soccer</div>
       </div>
-      <div id="footer-locations">
+      <div id="footer-locations" class="col-12 col-xs-6 col-sm-4  col-md-6 col-xl-2">
         <div class="footer-title">Locations</div>
         <div class="footer-list">US Office</div>
         <div class="footer-list">222 Berkeley Street</div>
@@ -579,7 +583,7 @@
         <div class="footer-list">Soho, London</div>
         <div class="footer-list">W1F OJH</div>
       </div>
-      <div id="comment" class="footer-comment">
+      <div id="comment" class="footer-comment col-12 col-xs-6 col-sm-4  col-md-6 col-xl-2">
         Must be 21+ and in Illinois to place wagers. If <br>
         you or someone you know has a gambling <br>
         problem and wants help, call 1-800-GAMBLER. <br>

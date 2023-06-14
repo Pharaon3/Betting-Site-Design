@@ -254,6 +254,7 @@ body {
 
   color: #4d4d4d;
   margin-right: 17px;
+  cursor: pointer;
 }
 .bet-slip-card {
   display: flex;
@@ -834,4 +835,112 @@ input:focus {
   align-items: center;
 
   color: #C5C5C5;
+}
+.minilogo{
+  display: none;
+  /* width: 100%; */
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.25);
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+.head-menus-navIcon {
+  display: none;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1495px) {
+  .logo {
+    width: 100%;
+    min-width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .logo {
+    display: flex;
+    width: 200px;
+    cursor: pointer;
+  }
+  .minilogo {
+    display: none;
+    cursor: pointer;
+  }
+  .sidemenus {
+    display: none;
+  }
+  .sidemenus-show {
+    display: block;
+    position: absolute;
+    width: 200px;
+  }
+  .sidemenus-show > div {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  }
+  .main-content {
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .middle-content{
+    margin-left: 0px;
+  }
+  .right-content {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .middle-content-header {
+    padding: 10px 20px;
+  }
+  .middle-content-body {
+    padding: 10px 20px;
+  }
+  .footer-mark {
+    margin-top: 10px;
+  }
+  .right-content > div {
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .right-content-header {
+    cursor: pointer;
+  }
+  .footer > div {
+    margin-bottom: 30px;
+  }
+  .head-menus > div {
+    margin: 0px 5px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .head-menus {
+    overflow: hidden;
+  }
+  .footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .head-menus-navIcon.head-menus-navIcon {
+    display: block;
+  }
 }
