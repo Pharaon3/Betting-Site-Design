@@ -27,7 +27,7 @@ body {
   align-items: center;
 }
 .sidemenus > div {
-  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
   background: #1c2023;
 }
@@ -35,7 +35,7 @@ body {
   padding-top: 14.5px;
   padding-left: 34.27px;
   padding-bottom: 14.5px;
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -51,7 +51,7 @@ body {
 .popular-content div {
   margin-bottom: 4px;
   font-size: 13px;
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -62,7 +62,7 @@ body {
   padding-bottom: 12px;
   padding-left: 38px;
   text-transform: uppercase;
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -81,7 +81,7 @@ body {
 .A-Z-sports-header {
   padding-top: 16px;
   padding-bottom: 19.5px;
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -94,7 +94,7 @@ body {
 .A-Z-sports-content > div {
   margin-top: 14.5px;
   text-transform: uppercase;
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -110,7 +110,7 @@ body {
 .submenus > div {
   margin-top: 4px;
   text-transform: uppercase;
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -123,36 +123,10 @@ body {
   margin-top: 19px !important;
   margin-bottom: 39.5px;
 }
-.sidebar__ {
-  position: fixed;
-  overflow: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  /* padding: 58px 0 0; Height of navbar */
-  margin-top: 75px;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-  width: 240px;
-  z-index: 60;
-}
-
-.sidebar__ .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.sidemenus {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-}
 .playoff-pages-header {
   padding-top: 18px;
   padding-left: 34.27px;
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -166,7 +140,7 @@ body {
   padding-left: 40px;
 }
 .playoff-pages-content > div {
-  font-family: "HelveticaNeueCyr";
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -183,6 +157,7 @@ body {
 }
 .right-content {
   width: 375px;
+  z-index: 100;
 }
 .middle-content > div {
   margin-bottom: 10px;
@@ -255,6 +230,7 @@ body {
 
   width: 375px;
   height: 56px;
+  margin: auto;
 }
 .round-number {
   width: 24px;
@@ -603,6 +579,7 @@ input:focus {
   margin-right: 17px;
   /* margin-bottom: 17px; */
   cursor: pointer;
+  margin-top: 16px;
 }
 .bet-button-heading {
   font-family: "Helvetica Neue";
@@ -637,22 +614,22 @@ input:focus {
 }
 .head-menus{
   display: flex;
+  overflow: hidden;
 }
 .head-menus > div {
   margin: 0px 15px;
   padding-bottom: 12.75px;
   cursor: pointer;
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height */
-
   display: flex;
   align-items: center;
-
-  color: #ABABAB;
+  color: #ABABAB;  
+  white-space: nowrap;
 }
 .head-menus > div:hover {
   color: #efce6f;
@@ -660,7 +637,7 @@ input:focus {
 .divide-horizontal {
   height: 1px;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .head-menu-active {
   color: #EFCE6F !important;
@@ -670,9 +647,9 @@ input:focus {
   padding: 20px 86px;
 }
 .game-title {
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica Neue';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
@@ -683,9 +660,9 @@ input:focus {
   color: #C5C5C5;
 }
 .table-header {
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica Neue';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
@@ -801,6 +778,7 @@ input:focus {
   color: #EFCE6F;
 }
 .footer {
+  width: 100%;
   margin-top: 10px;
   background: #1C2023;
   padding: 83px 37px 98px;
@@ -817,7 +795,7 @@ input:focus {
 .company-title {
   font-family: 'Helvetica Neue';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 20px;
   line-height: 24px;
   display: flex;
@@ -826,7 +804,7 @@ input:focus {
   color: #FFFFFF;
 }
 .company-location {
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -922,6 +900,61 @@ input:focus {
   padding: 0px 5px;
   cursor: pointer;
 }
+
+
+
+
+
+.sidemenus::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.sidemenus::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.sidemenus::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.25em;
+}
+
+/* Hide scrollbar for Firefox */
+.sidemenus {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.sidemenus::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.25em;
+}
+
+.sidemenus {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* padding: 58px 0 0; Height of navbar */
+  /* margin-top: 75px; */
+  /* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%); */
+  /* width: 240px; */
+  z-index: 60;
+}
+
+.sidebar__ .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidemenus {
+  position: relative;
+  top: calc(10px);
+  height: calc(100vh - 110px);
+  /* padding-top: 0.5rem; */
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
 @media screen and (max-width: 1495px) {
   .logo {
     width: 100%;
@@ -930,6 +963,28 @@ input:focus {
   }
 }
 @media screen and (max-width: 1400px) {
+  
+  .right-content {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .right-content > div {
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .right-content-header {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 786px) {
   .logo {
     display: flex;
     width: 200px;
@@ -945,7 +1000,7 @@ input:focus {
   .sidemenus-show {
     display: block;
     position: absolute;
-    width: 200px;
+    width: 230px;
   }
   .sidemenus-show > div {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
@@ -960,13 +1015,6 @@ input:focus {
   .middle-content{
     margin-left: 0px;
   }
-  .right-content {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 0px 10px;
-  }
   .middle-content-header {
     padding: 10px 20px;
   }
@@ -975,18 +1023,6 @@ input:focus {
   }
   .footer-mark {
     margin-top: 10px;
-  }
-  .right-content > div {
-    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.8);
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-  .mobile-hidden {
-    display: none;
-  }
-  .right-content-header {
-    cursor: pointer;
   }
   .footer > div {
     margin-bottom: 30px;
@@ -1003,6 +1039,16 @@ input:focus {
   .footer {
     margin-left: 10px;
     margin-right: 10px;
+    width: auto;
+  }
+  
+  .sidemenus {
+    height: calc(100vh - 160px);
+    top: calc(65px);
+  }
+  .sidemenus > div {
+    margin-bottom: 2px;
+    margin-right: 5px;
   }
 }
 @media screen and (max-width: 1000px) {
