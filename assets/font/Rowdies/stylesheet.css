@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Rowdies';
+    src: url('Rowdies-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rowdies';
+    src: url('Rowdies-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}

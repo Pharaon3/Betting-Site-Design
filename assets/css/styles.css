@@ -96,12 +96,58 @@ body {
   text-transform: uppercase;
   font-family: "HelveticaNeueCyr";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   color: #c5c5c5;
+}
+.submenus {
+  margin-top: 25.5px;
+  padding-left: 11px;
+}
+.submenus > div {
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* display: flex; */
+  align-items: center;
+  color: #c5c5c5;
+}
+.viewall {
+  margin-top: 19px !important;
+  margin-bottom: 39.5px;
+}
+.sidebar__ {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* padding: 58px 0 0; Height of navbar */
+  margin-top: 75px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 60;
+}
+
+.sidebar__ .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidemenus {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 .playoff-pages-header {
   padding-top: 18px;
@@ -164,7 +210,7 @@ body {
   text-align: right;
 }
 .right-content-header-p {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -189,7 +235,7 @@ body {
   background: #6fe0ef;
   border-radius: 5px;
 
-  font-family: "OpenSansbold";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -242,7 +288,7 @@ body {
   display: flex;
 }
 .clear-all-title {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -322,7 +368,7 @@ body {
   display: flex;
 }
 .single-card-heading {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -334,7 +380,7 @@ body {
   margin-left: 8.5px;
 }
 .single-card-title {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -349,7 +395,7 @@ body {
   margin-top: 7px;
 }
 .single-card-content {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -383,7 +429,7 @@ body {
   height: 36px; */
 }
 .payout {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -400,8 +446,8 @@ body {
 .betslip-odds {
   display: flex;
 }
-.OpenSansregular {
-  font-family: "OpenSansregular";
+.odds-span {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -425,7 +471,7 @@ body {
   border-radius: 6px;
 }
 .currency-simbol {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -444,7 +490,7 @@ input {
   font-size: 14px;
   background-color: transparent;
   color: white;
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -476,7 +522,7 @@ input:focus {
   border-radius: 5px;
 }
 .betslip-all-singles-title {
-  font-family: "OpenSansregular";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -595,6 +641,21 @@ input:focus {
 .head-menus > div {
   margin: 0px 15px;
   padding-bottom: 12.75px;
+  cursor: pointer;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #ABABAB;
+}
+.head-menus > div:hover {
+  color: #efce6f;
 }
 .divide-horizontal {
   height: 1px;
@@ -602,16 +663,16 @@ input:focus {
   background-color: #fff;
 }
 .head-menu-active {
-  color: #EFCE6F;
+  color: #EFCE6F !important;
   border-bottom: 2px solid #efce6f;
 }
 .middle-content-body {
   padding: 20px 86px;
 }
 .game-title {
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeueCyr';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
@@ -622,9 +683,9 @@ input:focus {
   color: #C5C5C5;
 }
 .table-header {
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeueCyr';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
@@ -637,7 +698,7 @@ input:focus {
   margin-top:49px;
 }
 .table-header > div {
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -660,7 +721,7 @@ input:focus {
 }
 .bet-table-timeinfo {
   display: flex;
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -685,7 +746,7 @@ input:focus {
   margin: 1.5px 0px;
 }
 .bet-table-team {
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -710,11 +771,16 @@ input:focus {
 
   background: #272B2E;
   border-radius: 10px;
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
+  font-weight: 400;
   font-style: normal;
   display: flex;
   align-items: center;
   margin: 0px 1.5px;
+  cursor: pointer;
+}
+.bet-table-card:hover {
+  background: #111;
 }
 .bet-table-card > div {
   margin: 0px 10px;
@@ -760,9 +826,9 @@ input:focus {
   color: #FFFFFF;
 }
 .company-location {
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeueCyr';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   display: flex;
@@ -779,7 +845,7 @@ input:focus {
   margin-right: 12px;
 }
 .footer-mark {
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -791,7 +857,7 @@ input:focus {
   margin-top: 266px;
 }
 .footer-title {
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -805,7 +871,7 @@ input:focus {
   margin-bottom: 15px;
 }
 .footer-list {
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -824,7 +890,7 @@ input:focus {
 }
 .footer-comment{
   margin-top: 33px;
-  font-family: 'OpenSansregular';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
