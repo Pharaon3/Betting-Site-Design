@@ -20,7 +20,7 @@ function toggleBetslip() {
 }
 function countdown() {
     var interval = setInterval(function () {
-        var container = document.getElementById('middle-content');
+        let container = document.getElementById('middle-content');
         var totalHeight = 0;
         for (var i = 0; i < container.children.length; i++) {
             var child = container.children[i];
@@ -36,4 +36,12 @@ function countdown() {
 function max(a, b){
     if (a > b) return a;
     return b;
+}
+function scrollHorizontal (contId, amount){
+    let container = $("#" + contId);
+    let leftVal = container.scrollLeft();
+    container.scrollLeft(max(0, leftVal + amount));
+}
+function setAvailable(){
+    
 }

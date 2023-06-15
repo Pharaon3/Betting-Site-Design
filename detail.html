@@ -22,6 +22,8 @@
       rel="stylesheet"
     />
     <link href="./assets/font/Saira/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -162,61 +164,60 @@
           Dustov vs Achad Imam Maruf Odds
         </div>
         <div id="middle-content-body" class="middle-content-body">
-          <div id="bet-cards" class="bet-cards">
-            <div id="bet-card" class="bet-card">
-              <div id="bet-card-title" class="bet-card-title">
-                Patrik Oplustil<br />
-                Dheeraj Kodancha Srinivasan
-              </div>
-              <div id="bet-card-bottomLine" class="bet-card-bottomLine">
-                <div id="bet-card-datetime" class="bet-card-datetime">
-                  6/12 10:40 A.M.
+          <div id="bet-cards-container" class="bet-cards-container">
+            <div id="bet-cards" class="bet-cards">
+              <div id="bet-card1" class="bet-card">
+                <div id="bet-card-title" class="bet-card-title">
+                  Patrik Oplustil 1<br />
+                  Dheeraj Kodancha Srinivasan
                 </div>
-                <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
-              </div>
-            </div>
-            <div id="bet-card" class="bet-card">
-              <div id="bet-card-title" class="bet-card-title">
-                Patrik Oplustil<br />
-                Dheeraj Kodancha Srinivasan
-              </div>
-              <div id="bet-card-bottomLine" class="bet-card-bottomLine">
-                <div id="bet-card-datetime" class="bet-card-datetime">
-                  6/12 10:40 A.M.
+                <div id="bet-card-bottomLine" class="bet-card-bottomLine">
+                  <div id="bet-card-datetime" class="bet-card-datetime">
+                    6/12 10:40 A.M.
+                  </div>
+                  <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
                 </div>
-                <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
               </div>
-            </div>
-            <div id="bet-card" class="bet-card">
-              <div id="bet-card-title" class="bet-card-title">
-                Patrik Oplustil<br />
-                Dheeraj Kodancha Srinivasan
-              </div>
-              <div id="bet-card-bottomLine" class="bet-card-bottomLine">
-                <div id="bet-card-datetime" class="bet-card-datetime">
-                  6/12 10:40 A.M.
+              <div id="bet-card2" class="bet-card">
+                <div id="bet-card-title" class="bet-card-title">
+                  Patrik Oplustil 2<br />
+                  Dheeraj Kodancha Srinivasan
                 </div>
-                <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
-              </div>
-            </div>
-            <div id="bet-card" class="bet-card">
-              <div id="bet-card-title" class="bet-card-title">
-                Patrik Oplustil<br />
-                Dheeraj Kodancha Srinivasan
-              </div>
-              <div id="bet-card-bottomLine" class="bet-card-bottomLine">
-                <div id="bet-card-datetime" class="bet-card-datetime">
-                  6/12 10:40 A.M.
+                <div id="bet-card-bottomLine" class="bet-card-bottomLine">
+                  <div id="bet-card-datetime" class="bet-card-datetime">
+                    6/12 10:40 A.M.
+                  </div>
+                  <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
                 </div>
-                <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
+              </div>
+              <div id="bet-card3" class="bet-card">
+                <div id="bet-card-title" class="bet-card-title">
+                  Patrik Oplustil 3<br />
+                  Dheeraj Kodancha Srinivasan
+                </div>
+                <div id="bet-card-bottomLine" class="bet-card-bottomLine">
+                  <div id="bet-card-datetime" class="bet-card-datetime">
+                    6/12 10:40 A.M.
+                  </div>
+                  <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
+                </div>
+              </div>
+              <div id="bet-card4" class="bet-card">
+                <div id="bet-card-title" class="bet-card-title">
+                  Patrik Oplustil 4<br />
+                  Dheeraj Kodancha Srinivasan
+                </div>
+                <div id="bet-card-bottomLine" class="bet-card-bottomLine">
+                  <div id="bet-card-datetime" class="bet-card-datetime">
+                    6/12 10:40 A.M.
+                  </div>
+                  <div id="bet-card-betnow" class="bet-card-betnow">bet now</div>
+                </div>
               </div>
             </div>
             <div id="bet-cards-button" class="bet-cards-button">
-              <i class="fa fa-chevron-left" aria-hidden="true"></i>
-              <i
-                class="fa fa-chevron-right bet-card-active"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-chevron-left" aria-hidden="true" onclick="scrollHorizontal('bet-cards', -196)"></i>
+              <i class="fa fa-chevron-right bet-card-active" onclick="scrollHorizontal('bet-cards', 196)" aria-hidden="true" ></i>
             </div>
           </div>
           <div id="match-info" class="match-info">

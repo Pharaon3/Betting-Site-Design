@@ -659,6 +659,9 @@ input:focus {
 }
 .middle-content-body {
   padding: 20px 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .game-title {
   font-family: 'Helvetica Neue';
@@ -710,7 +713,7 @@ input:focus {
   width: 22.2%;
 }
 .bet-table{
-  padding-top: 12px;
+  /* padding-top: 12px; */
 }
 .bet-table-timeinfo {
   display: flex;
@@ -991,15 +994,20 @@ input:focus {
   padding-right: 10px;
 }
 /* detail classes begine */
-.bet-cards {
+.bet-cards-container {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 10px;
+}
+.bet-cards {
+  display: flex;
+  /* justify-content: center; */
+  gap: 10px;
+  overflow: auto;
 }
 .bet-card {
-  max-width: 186px;
-  width: 100%;
+  min-width: 186px;
+  /* width: 100%; */
   height: 85px;
 
   background: rgba(255, 255, 255, 0.05);
@@ -1055,7 +1063,7 @@ input:focus {
   text-transform: uppercase;
 
   color: #EFCE6F;
-
+  cursor: pointer;
 }
 .bet-cards-button {
   margin-left: 11px;
@@ -1071,6 +1079,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 .bet-card-active {
   background: rgba(255, 255, 255, 0.1);
@@ -1298,9 +1307,7 @@ input:focus {
   }
   .middle-content-body {
     padding: 20px 20px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+    /* align-items: center; */
   }
   /* .middle-content-body > div {
     margin-left: auto;
