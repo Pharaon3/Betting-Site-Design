@@ -1216,6 +1216,25 @@ input:focus {
 .bet-component-button-active > div {
   color: #242424;
 }
+.bet-component-semiTitle {
+  height: 33px;
+  width: 100%;
+
+  background-color: rgba(91, 91, 91, 0.1);
+  border-radius: 10px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
 /* detail classes end */
 @media screen and (max-width: 1495px) {
   .logo {
