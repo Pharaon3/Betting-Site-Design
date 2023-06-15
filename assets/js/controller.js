@@ -31,6 +31,16 @@ function countdown() {
         let heightlogo = document.getElementById("logo").clientHeight;
         $("#sidemenus").css("height", totalHeight - heightlogo + 'px');
         if (window.innerWidth < 786) $("#sidemenus").css("height", totalHeight  + height3 - heightlogo - 30 + 'px');
+
+        let container1 = $("#bet-cards");
+        if (container1.scrollLeft() == 0) {
+            $("#leftbtn").removeClass("bet-card-active");
+        } else if (!$("#leftbtn").hasClass("bet-card-active")) $("#leftbtn").addClass("bet-card-active");
+        let rightdif = document.getElementById("bet-cards-button").getBoundingClientRect().left - document.getElementById("bet-card4").getBoundingClientRect().right;
+        // console.log("rightdif", rightdif);
+        if (rightdif > 20) {
+            $("#rightbtn").removeClass("bet-card-active");
+        } else if (!$("#rightbtn").hasClass("bet-card-active")) $("#rightbtn").addClass("bet-card-active");
     }, 100);
 }
 function max(a, b){
@@ -41,7 +51,13 @@ function scrollHorizontal (contId, amount){
     let container = $("#" + contId);
     let leftVal = container.scrollLeft();
     container.scrollLeft(max(0, leftVal + amount));
+    // if (container.scrollLeft() == 0) {
+    //     $("#leftbtn").removeClass("bet-card-active");
+    // } else if (!$("#leftbtn").hasClass("bet-card-active")) $("#leftbtn").addClass("bet-card-active");
 }
-function setAvailable(){
-    
+function setAvailable(contId, leftBtn, rightBtn){
+    let container = $("#" + contId);
+    let leftVal = container.scrollLeft();
+
+
 }
