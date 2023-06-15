@@ -1149,6 +1149,73 @@ input:focus {
   background: #FFFFFF;
   color: black;
 }
+.bet-components {
+  margin-top: 20px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bet-component-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.32px;
+
+  color: #FFFFFF;
+  padding-bottom: 17.6px;
+}
+.bet-component-buttons{
+  display: flex;
+  gap: 4px;
+}
+.bet-component-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.bet-component-button-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+.bet-component-button-value {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #EFCE6F;
+}
+.bet-component-button-active {
+  background: #EFCE6F;
+}
+.bet-component-button-active > div {
+  color: #242424;
+}
 /* detail classes end */
 @media screen and (max-width: 1495px) {
   .logo {
