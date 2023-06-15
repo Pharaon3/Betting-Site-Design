@@ -985,6 +985,20 @@ input:focus {
   width: 20%;
   /* margin-left: 4px; */
 }
+.timeline-cell__score {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #121212;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFCE6F;
+  padding: 1px 3px;
+  margin: 0px 3px;
+}
 @media screen and (max-width: 1495px) {
   .logo {
     width: 100%;
@@ -1094,6 +1108,9 @@ input:focus {
   }
   .event-cell__score {
     display: none !important;
+  }
+  .timeline-cell__score {
+    display: flex;
   }
 }
 @media screen and (max-width: 1000px) {
