@@ -1055,6 +1055,24 @@ input:focus {
   color: #EFCE6F;
 
 }
+.bet-cards-button {
+  margin-left: 11px;
+}
+.bet-cards-button * {
+  width: 35px;
+  height: 35px;
+
+  background: rgba(255, 255, 255, 0.05);
+  color: #ABABAB;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.bet-card-active {
+  background: rgba(255, 255, 255, 0.1);
+}
 /* detail classes end */
 @media screen and (max-width: 1495px) {
   .logo {
