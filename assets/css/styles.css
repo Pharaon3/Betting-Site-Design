@@ -668,7 +668,7 @@ input:focus {
   line-height: 17px;
   /* identical to box height */
   padding: 20px 86px;
-  height: 50px;
+  /* height: 50px; */
 
   display: flex;
   align-items: center;
