@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Saira';
+    src: url('./static/Saira-ExtraBold.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Saira';
+    src: url('./static/Saira-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Saira';
+    src: url('./static/Saira-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Saira';
+    src: url('./static/Saira-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}

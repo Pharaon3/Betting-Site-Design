@@ -790,7 +790,6 @@ input:focus {
 
   color: #FFFFFF;
 }
-
 .bet-table-card-right{
   font-weight: 700;
   font-size: 12px;
@@ -1104,6 +1103,51 @@ input:focus {
   background: url("../img/match.png");
   height: 192px;
   border-radius: 10px;
+}
+.odds-title {
+  padding-top: 23px;
+  padding-left: 3px;
+  padding-bottom: 6px;
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-bottom: 2px solid #EFCE6F;
+  width: 43px;
+}
+.odds-menus {
+  display: flex;
+  gap: 10px;
+  margin-top: 15.5px;
+}
+.odds-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 22px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  text-transform: uppercase;
+
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: center;
+}
+.odds-memnu-active {
+  background: #FFFFFF;
+  color: black;
 }
 /* detail classes end */
 @media screen and (max-width: 1495px) {
