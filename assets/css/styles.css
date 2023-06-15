@@ -228,7 +228,7 @@ body {
   justify-content: space-between;
   padding: 16px;
 
-  width: 375px;
+  max-width: 375px;
   height: 56px;
   margin: auto;
 }
@@ -241,6 +241,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-family: 'Rowdies';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
 .bet-slip {
   margin-left: 8px;
@@ -505,6 +512,7 @@ input:focus {
   line-height: 20px;
   padding-left: 18px;
   /* identical to box height, or 167% */
+  white-space: nowrap;
 
   display: flex;
   align-items: center;
@@ -516,6 +524,7 @@ input:focus {
   flex-direction: row;
   align-items: flex-start;
   padding: 10px 5px;
+  margin-top: 5px;
   isolation: isolate;
   width: 100%;
 }
@@ -544,6 +553,7 @@ input:focus {
   text-transform: uppercase;
 
   color: #6f6f6f;
+  padding-bottom: 13px;
 }
 
 .parley-active {
@@ -615,6 +625,9 @@ input:focus {
 .head-menus{
   display: flex;
   overflow: hidden;
+}
+.head-menus::-webkit-scrollbar {
+  display: none;
 }
 .head-menus > div {
   margin: 0px 15px;
@@ -743,7 +756,7 @@ input:focus {
   align-items: center;
   justify-content: center;
 
-  width: 177px;
+  /* width: 177px; */
   height: 44px;
 
   background: #272B2E;
@@ -835,6 +848,7 @@ input:focus {
   margin-top: 266px;
 }
 .footer-title {
+  text-transform: uppercase;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -983,6 +997,12 @@ input:focus {
   .right-content-header {
     cursor: pointer;
   }
+  .middle-content-header {
+    padding: 10px 20px;
+  }
+  .middle-content-body {
+    padding: 20px 20px;
+  }
 }
 @media screen and (max-width: 786px) {
   .logo {
@@ -1015,12 +1035,6 @@ input:focus {
   .middle-content{
     margin-left: 0px;
   }
-  .middle-content-header {
-    padding: 10px 20px;
-  }
-  .middle-content-body {
-    padding: 10px 20px;
-  }
   .footer-mark {
     margin-top: 10px;
   }
@@ -1034,7 +1048,7 @@ input:focus {
     justify-content: center;
   }
   .head-menus {
-    overflow: hidden;
+    overflow: auto;
   }
   .footer {
     margin-left: 10px;
@@ -1052,7 +1066,7 @@ input:focus {
   }
 }
 @media screen and (max-width: 1000px) {
-  .head-menus-navIcon.head-menus-navIcon {
-    display: block;
+  .head-menus-navIcon {
+    /* display: block; */
   }
 }
