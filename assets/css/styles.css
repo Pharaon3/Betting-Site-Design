@@ -769,9 +769,13 @@ input:focus {
   align-items: center;
   margin: 0px 1.5px;
   cursor: pointer;
+  white-space: nowrap;
 }
 .bet-table-card:hover {
-  background: #111;
+  background: #EFCE6F;
+}
+.bet-table-card:hover > div {
+  color: black;
 }
 .bet-table-card > div {
   margin: 0px 10px;
@@ -970,6 +974,16 @@ input:focus {
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+.event-cell__score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbd002;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20%;
+  /* margin-left: 4px; */
+}
 @media screen and (max-width: 1495px) {
   .logo {
     width: 100%;
@@ -1006,6 +1020,15 @@ input:focus {
   }
 }
 @media screen and (max-width: 786px) {
+  .bet-table-team {
+    padding-left: 10px;
+  }
+  .sidemenus > div {
+    display: none;
+  }
+  .A-Z-sports {
+    display: block !important;
+  }
   .logo {
     display: flex;
     width: 200px;
