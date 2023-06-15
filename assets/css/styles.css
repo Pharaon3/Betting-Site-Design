@@ -791,8 +791,8 @@ input:focus {
 
 .bet-table-card-right{
   font-weight: 700;
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 12px;
+  line-height: 16px;
 
   color: #EFCE6F;
 }
@@ -1105,10 +1105,5 @@ input:focus {
   }
   .timeline-cell__score {
     display: flex;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .head-menus-navIcon {
-    /* display: block; */
   }
 }
