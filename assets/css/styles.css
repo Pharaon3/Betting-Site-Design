@@ -1092,6 +1092,9 @@ input:focus {
   .bet-table-card {
     flex-direction: column;
   }
+  .event-cell__score {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 1000px) {
   .head-menus-navIcon {
