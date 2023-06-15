@@ -1019,6 +1019,7 @@ input:focus {
   font-size: 11px;
   line-height: 15px;
   color: #FFFFFF;
+  overflow: hidden;
 }
 .bet-card-bottomLine {
   display: flex;
