@@ -1171,6 +1171,11 @@ input:focus {
   color: #FFFFFF;
   padding-bottom: 17.6px;
 }
+.bet-component-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .bet-component-buttons{
   display: flex;
   gap: 4px;
@@ -1185,6 +1190,7 @@ input:focus {
 
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
+  /* margin-bottom: 4px; */
 }
 .bet-component-button-title {
   font-family: 'Open Sans';
@@ -1201,8 +1207,8 @@ input:focus {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 12px;
+  line-height: 16px;
   /* identical to box height */
 
   display: flex;
@@ -1233,7 +1239,23 @@ input:focus {
   align-items: center;
   padding-left: 8px;
   color: #FFFFFF;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
+}
+.bet-component-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 31px;
+  background: #161A1D;
+  border-radius: 10px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #6F6F6F;
+  width: 100%;
 }
 /* detail classes end */
 @media screen and (max-width: 1495px) {

@@ -20,12 +20,17 @@ function toggleBetslip() {
 }
 function countdown() {
     var interval = setInterval(function () {
-        let height1 = document.getElementById("middle-content-header").clientHeight;
-        let height2 = document.getElementById("middle-content-body").clientHeight;
+        var container = document.getElementById('middle-content');
+        var totalHeight = 0;
+        for (var i = 0; i < container.children.length; i++) {
+            var child = container.children[i];
+            totalHeight += child.offsetHeight + 10;
+        }
+        totalHeight -= 10;
         let height3 = document.getElementById("footer").clientHeight;
         let heightlogo = document.getElementById("logo").clientHeight;
-        $("#sidemenus").css("height", height1 + height2 - heightlogo + 'px');
-        if (window.innerWidth < 786) $("#sidemenus").css("height", height1 + height2 + height3 - heightlogo - 30 + 'px');
+        $("#sidemenus").css("height", totalHeight - heightlogo + 'px');
+        if (window.innerWidth < 786) $("#sidemenus").css("height", totalHeight  + height3 - heightlogo - 30 + 'px');
     }, 100);
 }
 function max(a, b){
