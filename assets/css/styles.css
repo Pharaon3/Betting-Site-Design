@@ -770,6 +770,7 @@ input:focus {
   margin: 0px 1.5px;
   cursor: pointer;
   white-space: nowrap;
+  min-width: 50px;
 }
 .bet-table-card:hover {
   background: #EFCE6F;
@@ -1087,6 +1088,9 @@ input:focus {
   .sidemenus > div {
     margin-bottom: 2px;
     margin-right: 5px;
+  }
+  .bet-table-card {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 1000px) {
