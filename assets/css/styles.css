@@ -667,6 +667,8 @@ input:focus {
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
+  padding: 20px 86px;
+  height: 50px;
 
   display: flex;
   align-items: center;
@@ -686,7 +688,7 @@ input:focus {
 
   color: #C5C5C5;
   justify-content: flex-end;
-  margin-top:49px;
+  /* margin-top:49px; */
 }
 .table-header > div {
   font-family: 'Open Sans';
@@ -1002,6 +1004,9 @@ input:focus {
 }
 @media screen and (max-width: 1400px) {
   
+  .game-title {
+    padding: 20px 20px;
+  }  
   .right-content {
     position: fixed;
     left: 0;
