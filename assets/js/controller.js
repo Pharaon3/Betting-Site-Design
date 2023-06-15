@@ -1,6 +1,14 @@
 function toggle() {
-    if($("#sidemenus").hasClass('sidemenus-show')) $("#sidemenus").removeClass("sidemenus-show");
-    else $("#sidemenus").addClass("sidemenus-show");
+    if($("#sidemenus").hasClass('sidemenus-show')) {
+        $("#sidemenus").removeClass("sidemenus-show");
+        $(".fa-chevron-down").removeClass("hidden");
+        $(".fa-chevron-up").addClass("hidden");
+    }
+    else {
+        $("#sidemenus").addClass("sidemenus-show");
+        $(".fa-chevron-up").removeClass("hidden");
+        $(".fa-chevron-down").addClass("hidden");
+    }
 }
 function collapse(id){
     if($("#" + id).hasClass("sidebar-collapsed")) $("#" + id).removeClass("sidebar-collapsed");

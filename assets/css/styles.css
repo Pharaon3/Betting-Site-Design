@@ -995,6 +995,22 @@ input:focus {
   color: #fbd002;
   margin: 0px 6px;
 }
+.A-Z-button {
+  display: none;
+  white-space: nowrap;
+  padding-bottom: 12.75px;
+  cursor: pointer;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  align-items: center;
+  color: #ABABAB;  
+  /* white-space: nowrap; */
+  padding-right: 10px;
+}
 @media screen and (max-width: 1495px) {
   .logo {
     width: 100%;
@@ -1096,7 +1112,8 @@ input:focus {
   
   .sidemenus {
     height: calc(100vh - 160px);
-    top: calc(65px);
+    top: calc(110px);
+    margin-left: 10px;
   }
   .sidemenus > div {
     margin-bottom: 2px;
@@ -1109,6 +1126,9 @@ input:focus {
     display: none !important;
   }
   .timeline-cell__score {
+    display: flex;
+  }
+  .A-Z-button {
     display: flex;
   }
 }
