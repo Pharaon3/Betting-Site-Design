@@ -995,6 +995,7 @@ input:focus {
 .bet-cards {
   display: flex;
   gap: 10px;
+  margin-bottom: 10px;
 }
 .bet-card {
   width: 186px;
@@ -1072,6 +1073,37 @@ input:focus {
 }
 .bet-card-active {
   background: rgba(255, 255, 255, 0.1);
+}
+.match-info {
+  height: 357px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+.match-info-left {
+  width: 510px;
+  left: 360px;
+  top: 268px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.match-info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.match-info-top {
+  width: 311px;
+  height: 155px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.match-info-bottom {
+  width: 311px;
+  background: url("../img/match.png");
+  height: 192px;
+  border-radius: 10px;
 }
 /* detail classes end */
 @media screen and (max-width: 1495px) {
