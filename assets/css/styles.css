@@ -1165,6 +1165,11 @@ input:focus {
   white-space: nowrap;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.odds-menu:active {
+  background: #FFFFFF;
+  color: black;
 }
 .odds-memnu-active {
   background: #FFFFFF;
@@ -1212,6 +1217,7 @@ input:focus {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   /* margin-bottom: 4px; */
+  cursor: pointer;
 }
 .bet-component-button-title {
   font-family: 'Open Sans';
@@ -1241,6 +1247,12 @@ input:focus {
   background: #EFCE6F;
 }
 .bet-component-button-active > div {
+  color: #242424;
+}
+.bet-component-button:active {
+  background: #EFCE6F;
+}
+.bet-component-button:active > div {
   color: #242424;
 }
 .bet-component-semiTitle {
