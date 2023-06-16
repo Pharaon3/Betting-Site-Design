@@ -11,6 +11,7 @@ body {
   max-width: 1668px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 .sidebar {
   color: white;
@@ -1291,6 +1292,63 @@ input:focus {
   width: 100%;
 }
 /* detail classes end */
+/* Log in classes begin*/
+.body-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.heading-logo {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.login-form > * {
+  width: 100%;
+}
+.login-form > h1 {
+  text-align: center;
+}
+.login-comment {
+  text-align: center;
+}
+.login-username-input-label {
+  padding: 5px 0px;
+}
+.form-input-container {
+  /* border-radius: 5px; */
+  border-bottom: 2px solid #121212;
+  padding: 2px 0px;
+  margin: 2px 0px;
+}
+.remember-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.remember-form > input {
+  width: 12px;
+  height: 12px;
+}
+/* Log in classes end */
 @media screen and (max-width: 1495px) {
   .logo {
     width: 100%;
