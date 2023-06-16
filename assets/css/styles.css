@@ -11,7 +11,7 @@ body {
   max-width: 1668px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .sidebar {
   color: white;
@@ -471,7 +471,6 @@ input {
   border-style: none;
   width: 100%;
   text-align: right;
-  font-size: 14px;
   background-color: transparent;
   color: white;
   font-family: "Open Sans";
@@ -1319,12 +1318,23 @@ input:focus {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C5C5C5;
 }
 .login-form > * {
   width: 100%;
 }
 .login-form > h1 {
   text-align: center;
+  font-family: 'Rowdies';
+  font-style: normal;
+  font-weight: 700;
+  color: white;
 }
 .login-comment {
   text-align: center;
@@ -1334,9 +1344,10 @@ input:focus {
 }
 .form-input-container {
   /* border-radius: 5px; */
-  border-bottom: 2px solid #121212;
+  border-bottom: 2px solid #aaa;
   padding: 2px 0px;
   margin: 2px 0px;
+  font-size: 14px;
 }
 .remember-form {
   display: flex;
@@ -1393,6 +1404,12 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.policy-term * {
+  color: #C5C5C5;
+}
+.policy-term a {
+  font-weight: bold;
 }
 /* Log in classes end */
 @media screen and (max-width: 1495px) {
