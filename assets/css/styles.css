@@ -1329,7 +1329,7 @@ input:focus {
 .login-comment {
   text-align: center;
 }
-.login-username-input-label {
+.login-input-label {
   padding: 5px 0px;
 }
 .form-input-container {
@@ -1340,13 +1340,51 @@ input:focus {
 }
 .remember-form {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
+  cursor: pointer;
+}
+.remember-form * {
   cursor: pointer;
 }
 .remember-form > input {
   width: 12px;
   height: 12px;
+}
+.forgotPassword-form {
+  display: flex;
+  justify-content: end;
+}
+.forgot-password {
+  cursor: pointer;
+  /* text-decoration: underline; */
+  padding: 0px 1px;
+  border-bottom: 1px solid #fff;
+}
+.submit-button {  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  /* width: 76px; */
+  /* height: 30px; */
+
+  background: #6fe0ef;
+  border-radius: 5px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  color: #000000;
+  cursor: pointer;
 }
 /* Log in classes end */
 @media screen and (max-width: 1495px) {
