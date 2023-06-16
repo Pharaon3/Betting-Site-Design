@@ -1239,8 +1239,8 @@ input:focus {
   line-height: 16px;
   display: flex;
   align-items: center;
-
   color: #FFFFFF;
+  white-space: nowrap;
 }
 .bet-component-button-value {
   font-family: 'Open Sans';
@@ -1552,5 +1552,51 @@ input:focus {
   .bet-component-button {
     flex-direction: column;
     gap: 0px;
+  }
+  .match-info {
+    display: block;
+    height: 100%;
+  }
+  .match-info-left {
+    height: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .match-info-right {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto; /* First two columns with fixed width, last column takes the remaining space */
+    grid-gap: 10px; /* Adjust the gap between columns as needed */
+  }
+  .match-info-top {
+    width: auto;
+    height: 192px;
+  }
+  .three-buttons {
+    flex-direction: column;
+  }
+  .three-buttons > div {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .match-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .match-info-top {
+    width: 100%;
+  }
+  .match-info-bottom {
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
