@@ -1360,6 +1360,7 @@ input:focus {
   /* text-decoration: underline; */
   padding: 0px 1px;
   border-bottom: 1px solid #fff;
+  font-weight: bold;
 }
 .submit-button {  
   display: flex;
@@ -1367,10 +1368,6 @@ input:focus {
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-
-  /* width: 76px; */
-  /* height: 30px; */
-
   background: #6fe0ef;
   border-radius: 5px;
 
@@ -1385,6 +1382,17 @@ input:focus {
 
   color: #000000;
   cursor: pointer;
+}
+.goto-signup-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.legal-text-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 /* Log in classes end */
 @media screen and (max-width: 1495px) {
