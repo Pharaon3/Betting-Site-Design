@@ -7,11 +7,23 @@ body {
   margin-top: 10px;
   padding-left: 9px;
   padding-right: 9px;
-  display: flex;
+  display: grid;
   max-width: 1668px;
   margin-left: auto;
   margin-right: auto;
+  grid-template-columns: auto 1fr auto; /* First two columns with fixed width, last column takes the remaining space */
+  grid-gap: 10px; /* Adjust the gap between columns as needed */
   /* justify-content: center; */
+}
+.login-content {
+  margin-top: 10px;
+  padding-left: 9px;
+  padding-right: 9px;
+  display: grid;
+  max-width: 1668px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 .sidebar {
   color: white;
@@ -152,9 +164,9 @@ body {
   padding-bottom: 20.5px;
 }
 .middle-content {
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* width: 100%; */
+  /* margin-left: 10px;
+  margin-right: 10px; */
 }
 .right-content {
   width: 375px;
@@ -1412,14 +1424,14 @@ input:focus {
   font-weight: bold;
 }
 /* Log in classes end */
-@media screen and (max-width: 1495px) {
+/* @media screen and (max-width: 1495px) {
   .logo {
     width: 100%;
     min-width: 50px;
     height: 50px;
   }
-}
-@media screen and (max-width: 1400px) {
+} */
+@media screen and (max-width: 1300px) {
   
   .game-title {
     padding: 20px 20px;
@@ -1448,14 +1460,15 @@ input:focus {
   }
   .middle-content-body {
     padding: 20px 20px;
-    /* align-items: center; */
   }
-  /* .middle-content-body > div {
-    margin-left: auto;
-    margin-right: auto;
-  } */
+  .main-content {
+    padding-right: 0px;
+  }
 }
 @media screen and (max-width: 786px) {
+  .main-content {
+    padding-right: 10px;
+  }
   .bet-table-team {
     padding-left: 10px;
   }
