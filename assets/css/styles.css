@@ -1005,6 +1005,9 @@ input:focus {
   gap: 10px;
   overflow: auto;
 }
+.bet-cards::-webkit-scrollbar {
+  display: none;
+}
 .bet-card {
   min-width: 186px;
   /* width: 100%; */
@@ -1079,10 +1082,11 @@ input:focus {
   justify-content: center;
   align-items: center;
   margin-bottom: 2px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .bet-card-active {
   background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 .match-info {
   height: 357px;
@@ -1137,6 +1141,10 @@ input:focus {
   display: flex;
   gap: 10px;
   margin-top: 15.5px;
+  overflow: auto;
+}
+.odds-menus::-webkit-scrollbar {
+  display: none;
 }
 .odds-menu {
   display: flex;
@@ -1154,7 +1162,7 @@ input:focus {
   font-size: 12px;
   line-height: 14px;
   /* identical to box height, or 117% */
-
+  white-space: nowrap;
   display: flex;
   align-items: center;
 }
@@ -1394,5 +1402,9 @@ input:focus {
   }
   .A-Z-button {
     display: flex;
+  }
+  .bet-component-button {
+    flex-direction: column;
+    gap: 0px;
   }
 }

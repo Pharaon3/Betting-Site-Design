@@ -55,9 +55,3 @@ function scrollHorizontal (contId, amount){
     //     $("#leftbtn").removeClass("bet-card-active");
     // } else if (!$("#leftbtn").hasClass("bet-card-active")) $("#leftbtn").addClass("bet-card-active");
 }
-function setAvailable(contId, leftBtn, rightBtn){
-    let container = $("#" + contId);
-    let leftVal = container.scrollLeft();
-
-
-}
