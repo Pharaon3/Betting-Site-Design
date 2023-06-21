@@ -20,12 +20,19 @@ function toggleBetslip() {
 }
 function countdown(pagelink="") {
     var interval = setInterval(function () {
-        let container = document.getElementById('middle-content');
-        var totalHeight = 0;
-        for (var i = 0; i < container.children.length; i++) {
-            var child = container.children[i];
-            totalHeight += child.offsetHeight + 10;
+        let middlecontainer = document.getElementById('middle-content');
+        var middletotalHeight = 0;
+        for (var i = 0; i < middlecontainer.children.length; i++) {
+            var child = middlecontainer.children[i];
+            middletotalHeight += child.offsetHeight + 10;
         }
+        let rightcontainer = document.getElementById('right-content');
+        var righttotalHeight = 0;
+        for (var i = 0; i < rightcontainer.children.length; i++) {
+            var child = rightcontainer.children[i];
+            righttotalHeight += child.offsetHeight + 10;
+        }
+        let totalHeight = max(middletotalHeight, righttotalHeight);
         totalHeight -= 10;
         let height3 = document.getElementById("footer").clientHeight;
         let heightlogo = document.getElementById("logo").clientHeight;
