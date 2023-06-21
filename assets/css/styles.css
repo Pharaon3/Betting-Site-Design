@@ -1503,6 +1503,7 @@ input:focus {
   }
   .A-Z-sports {
     display: block !important;
+    min-height:  99%;
   }
   .logo {
     display: flex;

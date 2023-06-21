@@ -37,7 +37,7 @@ function countdown(pagelink="") {
         let height3 = document.getElementById("footer").clientHeight;
         let heightlogo = document.getElementById("logo").clientHeight;
         $("#sidemenus").css("height", totalHeight - heightlogo + 'px');
-        if (window.innerWidth < 786) $("#sidemenus").css("height", totalHeight  + height3 - heightlogo - 30 + 'px');
+        if (window.innerWidth < 786) $("#sidemenus").css("height", totalHeight  + height3 - heightlogo - 30 + 55 + 'px');
     if (pagelink=="detail"){
         let container1 = $("#bet-cards");
         if (container1.scrollLeft() == 0) {
