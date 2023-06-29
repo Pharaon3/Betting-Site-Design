@@ -98,7 +98,6 @@ body {
 .sidebutton a:hover {
   color: #efce6f;
 }
-
 .A-Z-sports {
   padding-top: 16px;
   padding-left: 27px;
@@ -1034,7 +1033,7 @@ input:focus {
 /* detail classes begine */
 .bet-cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   gap: 10px;
 }
 .bet-cards {
