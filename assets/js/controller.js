@@ -54,9 +54,8 @@ function countdown(pagelink="") {
                 $("#rightbtn").removeClass("bet-card-active");
             } else if (!$("#rightbtn").hasClass("bet-card-active")) $("#rightbtn").addClass("bet-card-active")
         }
-
     if (window.innerWidth > 1300){
-            $("#middle-content").css("max-width", window.innerWidth - 672);
+            $("#middle-content").css("max-width", min(window.innerWidth - 672, 996));
     } else if (window.innerWidth > 786){
             $("#middle-content").css("max-width", window.innerWidth - 287);
         } else $("#middle-content").css("max-width", "100%");
@@ -65,6 +64,10 @@ function countdown(pagelink="") {
 }
 function max(a, b){
     if (a > b) return a;
+    return b;
+}
+function min(a, b){
+    if (a < b) return a;
     return b;
 }
 function scrollHorizontal (contId, amount){
