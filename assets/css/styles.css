@@ -89,8 +89,8 @@ body {
 }
 
 .sidebutton a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 .sidebutton.active,
 .sidebutton:hover,
@@ -98,6 +98,78 @@ body {
 .sidebutton a:hover {
   color: #efce6f;
 }
+
+.blocked {
+  /* Tabloyu grileştir */
+  opacity: 0.2;
+  pointer-events: none; /* Tabloya tıklanamaz hale getirir */
+}
+
+.removed {
+  /* Tabloyu grileştir */
+  opacity: 1 !important;
+  pointer-events: none; /* Tabloya tıklanamaz hale getirir */
+}
+
+.disabled {
+  /* Tabloyu grileştir */
+  opacity: 0.2;
+  pointer-events: none; /* Tabloya tıklanamaz hale getirir */
+}
+
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li:not(:first-child)::before, span:not(:first-child)::before {
+  content: '/';
+  margin: 0 5px;
+}
+
+.game-title a {
+  color: #C5C5C5;
+  text-decoration: none;
+}
+
+@keyframes flash_up {
+  0% {
+    background-color: #ffffff85;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ffffff85;
+  }
+}
+
+@keyframes flash_down {
+  0% {
+    background-color: #ffffff85;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ffffff85;
+  }
+}
+
+._up {
+  animation: flash_up 1s linear;
+}
+
+._down {
+  animation: flash_down 1s linear;
+}
+
+
 .A-Z-sports {
   padding-top: 16px;
   padding-left: 27px;
@@ -741,9 +813,6 @@ input:focus {
 .nine2 {
   width: 22.2%;
 }
-.nine3 {
-  width: 33.3%;
-}
 .bet-table{
   /* padding-top: 12px; */
 }
@@ -802,16 +871,19 @@ input:focus {
   font-family: 'Open Sans';
   font-weight: 400;
   font-style: normal;
-  display: flex;
-  align-items: center;
   margin: 0px 1.5px;
   cursor: pointer;
   white-space: nowrap;
   min-width: 50px;
+  user-select: none;
 }
 .bet-table-team a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
+}
+
+.bet-table-team a:hover {
+  color: #efce6f;
 }
 
 .bet-table-card:hover {
@@ -827,8 +899,8 @@ input:focus {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-
   color: #FFFFFF;
+  user-select: none;
 }
 .bet-table-card-right{
   font-weight: 700;
@@ -836,6 +908,7 @@ input:focus {
   line-height: 16px;
 
   color: #EFCE6F;
+  user-select: none;
 }
 .footer {
   width: 100%;
@@ -1030,19 +1103,24 @@ input:focus {
   /* white-space: nowrap; */
   padding-right: 10px;
 }
+
 .space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .caption-button {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 100px;
   padding: 2px 10px;
-  font-size: 12px;
+  font-size: 11px;
   background: rgba(255, 255, 255, 0.05);
   font-weight: bold;
+  white-space: nowrap;
+  color: #C5C5C5;
+  text-decoration: none;
 }
 .caption-button:hover {
   background: #EFCE6F;
@@ -1051,7 +1129,7 @@ input:focus {
 /* detail classes begine */
 .bet-cards-container {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   gap: 10px;
 }
 .bet-cards {
@@ -1274,6 +1352,20 @@ input:focus {
   /* margin-bottom: 4px; */
   cursor: pointer;
 }
+
+.bet-component-button-removed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+
+
 .bet-component-button-title {
   font-family: 'Open Sans';
   font-style: normal;
@@ -1304,12 +1396,13 @@ input:focus {
 .bet-component-button-active > div {
   color: #242424;
 }
-.bet-component-button:active {
+.bet-component-button:active, .bet-component-button:hover {
   background: #EFCE6F;
 }
-.bet-component-button:active > div {
+.bet-component-button:active > div, .bet-component-button:hover > div {
   color: #242424;
 }
+
 .bet-component-semiTitle {
   height: 33px;
   width: 100%;
@@ -1520,7 +1613,6 @@ input:focus {
   }
   .A-Z-sports {
     display: block !important;
-    min-height:  99%;
   }
   .logo {
     display: flex;

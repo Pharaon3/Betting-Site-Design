@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="tr" class="no-js">
+<head>
+<title>Market and option template test file</title>
+<meta charset="utf-8" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+<style type="text/css">
+body {
+	font-family: Verdana;
+	font-size: 13px;
+	padding-bottom: 150px;
+}
+
+.markets {
+	display: flex;
+	flex-direction: column;
+}
+
+.markets.blocked {
+	opacity: 0.4;
+}
+
+.market {
+	border-bottom: 1px solid #ccc;
+	padding: 16px;
+	order: 2147483647;
+}
+
+.market.blocked {
+	opacity: 0.4;
+}
+
+.market-option.blocked {
+	opacity: 0.4;
+}
+
+.market-options {
+	display: flex;
+}
+
+.market-option.removed {
+	visibility: hidden;
+}
+
+.market-option > .title {
+	color: #c60;
+}
+
+
+.market-option > .value {
+	color: #34f;
+}
+
+
+/* 1: One line, 3 columns */
+.market[data-template-type="13"] {
+}
+
+.market[data-template-type="13"] > .market-options {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	justify-content: space-around;
+	justify-content: space-between;
+}
+
+.market[data-template-type="13"] > .market-options > .market-option {
+	swidth: 33%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	text-align: center;
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 8px;
+	ssgap: 10px;
+	margin: 5px;
+}
+
+/* 1: One line, 2 columns */
+.market[data-template-type="12"] {
+}
+
+.market[data-template-type="12"] > .market-options > .market-option {
+	swidth: 33%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	text-align: center;
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 8px;
+	ssgap: 10px;
+	margin: 5px;
+}
+
+/* 1: X lines, 1 column */
+.market[data-template-type="91"] {
+}
+
+.market[data-template-type="91"] > .market-options {
+	flex-direction: column;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option.removed {
+	display: none;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option > .title {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option > .value {
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 8px;
+}
+
+
+/* 1: X lines, 2 columns */
+.market[data-template-type="92"] > .market-options {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	gap: 10px;
+}
+
+.market[data-template-type="92"] > .market-options > .market-option {
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 8px;
+	text-align: center;
+}
+
+.market[data-template-type="92"] > .market-options > .market-option[data-template-type="1"] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.market[data-template-type="92"] > .market-options > .market-option[data-template-type="2"] {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+/* 1: X lines, 3 columns */
+.market[data-template-type="93"] > .market-options {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
+	gap: 10px;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option {
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 8px;
+	text-align: center;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option[data-template-type="1"] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option[data-template-type="2"] {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option[data-template-type="3"] {
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+/* 1: X lines, 4 columns */
+.market[data-template-type="94"] > .market-options {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto;
+	gap: 10px;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option {
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 8px;
+	text-align: center;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="1"] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="2"] {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="3"] {
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="4"] {
+	grid-column-start: 4;
+	grid-column-end: 4;
+}
+
+
+/* DEFAULT */
+/* 1: X lines, 1 column */
+.market[data-template-type=""] {
+}
+
+.market[data-template-type=""] > .market-options {
+	flex-direction: column;
+}
+
+.market[data-template-type=""] > .market-options > .market-option {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.market[data-template-type=""] > .market-options > .market-option.removed {
+	display: none;
+}
+
+.market[data-template-type=""] > .market-options > .market-option > .title {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.market[data-template-type=""] > .market-options > .market-option > .value {
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 8px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h2>Uyarılar</h2>
+<ul>
+	<li>Yalnızca market ve market opsiyon şablonlarının nasıl çalışacağına dair örnektir.</li>
+	<li>CSS kodları birebir alınmamalıdır. Yalnızca örnektir.</li>
+	<li>Yükün çoğu CSS'e yıkıldığı için VueJS'e az iş kalır, bu sayede çok daha hızlı çalışır.</li>
+	<li>Şu andaki sistemimiz market gruplamalarını desteklemediği için DK'deki karmaşık market gruplamalar desteklenmez.
+	Projenin ileriki aşamalarında bu tarz market grup şablonları için destek eklenebilir.</li>
+	<li>İçinde "participant" verisinin olduğu skorer marketler için özel şablonlar tasarlamak gerekebilir.</li>
+	<li>Bu dosyada varsayılan şablon olarak tek sütunlu sınırsız satırlı şablon (91) seçilmiştir. data-template-type="" olarak belirtilir.</li>
+	<li>Silinen marketler DOM içinden silinmelidir.</li>
+	<li>Silinen opsiyonlar ise DOM içinden silinmemeli, bunun yerine "removed" sınıfı verilmelidir.</li>
+	<li>Market sıralamasını değiştirmek için tek yapılması gereken şudur: style="order:1" (style="order:2" vs.)
+	Aşağıdaki örnekte "Default" başlıklı market, HTML kodunun en altında olmasına rağmen style="order:1" verildiği için en üst sırada görünmektedir.</li>
+	<li>Maç bloklandığında sınıfı "markets" olan dive "blocked" sınıfı eklenir.</li>
+</ul>
+
+
+<div class="event">
+
+	<div class="markets"> <!-- Maçı bloklamak için: class="markets blocked" --->
+		<div class="market" data-template-type="13">
+			<div class="market-title">Moneyline</div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Galatasaray</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Draw</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe</span> <span class="value">1.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="12">
+			<div class="market-title">Both Teams to Score</div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Yes</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">No</span> <span class="value">1.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="13">
+			<div class="market-title">Moneyline <i>(Removed "Draw")</i></div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Galatasaray</span> <span class="value">1.02</span></div>
+				<div class="market-option removed" data-template-type="2"><span class="title">Draw</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe</span> <span class="value">1.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="13">
+			<div class="market-title">Moneyline <i>(Removed "Galatasaray")</i></div>
+			<div class="market-options">
+				<div class="market-option removed" data-template-type="1"><span class="title">Galatasaray</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Draw</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe</span> <span class="value">1.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="91">
+			<div class="market-title">Double Chance</div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Tie or Galatasaray</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Galatasaray or Fenerbahçe</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe or Tie</span> <span class="value">3.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="91">
+			<div class="market-title">Double Chance <i>(Removed second option)</i></div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Tie or Galatasaray</span> <span class="value">1.02</span></div>
+				<div class="market-option removed" data-template-type="2"><span class="title">Galatasaray or Fenerbahçe</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe or Tie</span> <span class="value">3.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="92">
+			<div class="market-title">Team Odd Even</div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Galatasaray Odd</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Galatasaray Even</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="1"><span class="title">Fenerbahçe Odd</span> <span class="value">3.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Fenerbahçe Even</span> <span class="value">4.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Test Even</span> <span class="value">5.02</span></div>
+				<div class="market-option" data-template-type="1"><span class="title">Test Odd</span> <span class="value">15.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="93">
+			<div class="market-title">3 columns layout</div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="93">
+			<div class="market-title">3 columns layout <i>(Some removed items)</i></div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option removed" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+				<div class="market-option removed" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="94">
+			<div class="market-title">4 columns layout</div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+				<div class="market-option" data-template-type="4"><span class="title">Option 4</span> <span class="value">4.02</span></div>
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+				<div class="market-option" data-template-type="4"><span class="title">Option 4</span> <span class="value">4.02</span></div>
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+			</div>
+		</div>
+		<div class="market blocked" data-template-type="91">
+			<div class="market-title">Double Chance <i>(Blocked market)</i></div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Tie or Galatasaray</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Galatasaray or Fenerbahçe</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe or Tie</span> <span class="value">3.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="93">
+			<div class="market-title">3 columns layout <i>(Some blocked odds)</i></div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option blocked" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+				<div class="market-option blocked" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="" style="order:1">
+			<div class="market-title">Default</div>
+			<div class="market-options">
+				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+				<div class="market-option" data-template-type="3"><span class="title">Option 4</span> <span class="value">4.02</span></div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
