@@ -9,6 +9,7 @@
       href="./assets/font/Open Sans/static/stylesheet.css"
       rel="stylesheet"
     />
+<!-- <link href="./assets/css/styles.css" rel="stylesheet" /> -->
 <style type="text/css">
 body {
 	font-family: Verdana;
@@ -19,10 +20,34 @@ body {
 	margin: 2px;
 }
 
+.divide-horizontal-detail {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 5px 0px;
+}
 .markets {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Open sans';
+	
+	border-radius: 10px;
+	background: #1c2023;
+}
+.market-title {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	/* or 130% */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.32px;
+
+	color: #FFFFFF;
+	padding-bottom: 17.6px;
 }
 
 .markets.blocked {
@@ -30,7 +55,7 @@ body {
 }
 
 .market {
-	border-bottom: 1px solid #ccc;
+	/* border-bottom: 1px solid #ccc; */
 	padding: 16px;
 	order: 2147483647;
 	
@@ -82,6 +107,12 @@ body {
 	color: #EFCE6F;
 }
 
+.market-option:active, .market-option:hover {
+  background: #EFCE6F !important;
+}
+.market-option:active > *, .market-option:hover > * {
+  color: #242424 !important;
+}
 
 /* 1: One line, 3 columns */
 .market[data-template-type="13"] {
@@ -389,6 +420,7 @@ body {
 				<div class="market-option" data-template-type="2"><span class="title">Draw</span> <span class="value">1.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe</span> <span class="value">1.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="12">
 			<div class="market-title">Both Teams to Score</div>
@@ -396,6 +428,7 @@ body {
 				<div class="market-option" data-template-type="1"><span class="title">Yes</span> <span class="value">1.02</span></div>
 				<div class="market-option" data-template-type="2"><span class="title">No</span> <span class="value">1.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="13">
 			<div class="market-title">Moneyline <i>(Removed "Draw")</i></div>
@@ -404,6 +437,7 @@ body {
 				<div class="market-option removed" data-template-type="2"><span class="title">Draw</span> <span class="value">1.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe</span> <span class="value">1.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="13">
 			<div class="market-title">Moneyline <i>(Removed "Galatasaray")</i></div>
@@ -412,6 +446,7 @@ body {
 				<div class="market-option" data-template-type="2"><span class="title">Draw</span> <span class="value">1.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe</span> <span class="value">1.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="91">
 			<div class="market-title">Double Chance</div>
@@ -428,6 +463,7 @@ body {
 				<div class="market-option removed" data-template-type="2"><span class="title">Galatasaray or Fenerbahçe</span> <span class="value">2.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe or Tie</span> <span class="value">3.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="92">
 			<div class="market-title">Team Odd Even</div>
@@ -439,6 +475,7 @@ body {
 				<div class="market-option" data-template-type="2"><span class="title">Test Even</span> <span class="value">5.02</span></div>
 				<div class="market-option" data-template-type="1"><span class="title">Test Odd</span> <span class="value">15.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="93">
 			<div class="market-title">3 columns layout</div>
@@ -450,6 +487,7 @@ body {
 				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="93">
 			<div class="market-title">3 columns layout <i>(Some removed items)</i></div>
@@ -461,6 +499,7 @@ body {
 				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="94">
 			<div class="market-title">4 columns layout</div>
@@ -476,6 +515,7 @@ body {
 				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
 				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market blocked" data-template-type="91">
 			<div class="market-title">Double Chance <i>(Blocked market)</i></div>
@@ -484,6 +524,7 @@ body {
 				<div class="market-option" data-template-type="2"><span class="title">Galatasaray or Fenerbahçe</span> <span class="value">2.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Fenerbahçe or Tie</span> <span class="value">3.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
 		<div class="market" data-template-type="93">
 			<div class="market-title">3 columns layout <i>(Some blocked odds)</i></div>
@@ -495,8 +536,9 @@ body {
 				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
 			</div>
+			<div class="divide-horizontal-detail" ></div>
 		</div>
-		<div class="market" data-template-type="" style="order:1">
+		<!-- <div class="market" data-template-type="" style="order:1">
 			<div class="market-title">Default</div>
 			<div class="market-options">
 				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
@@ -504,7 +546,7 @@ body {
 				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Option 4</span> <span class="value">4.02</span></div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 </div>
