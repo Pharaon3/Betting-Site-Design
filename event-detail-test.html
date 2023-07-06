@@ -423,12 +423,54 @@ body {
 .market[data-template-type=""] > .market-options > .market-option > .title {
 	flex-grow: 1;
 	flex-shrink: 1;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 18px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.32px;
+
+	color: #FFFFFF;
+	padding-left: 30px;
 }
 
 .market[data-template-type=""] > .market-options > .market-option > .value {
 	background-color: #eee;
 	border-radius: 10px;
-	
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* width: 177px; */
+    height: 44px;
+    background: #272B2E;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 1.5px;
+    cursor: pointer;
+    white-space: nowrap;
+    min-width: 50px;
+    user-select: none;
+    width: 20%;
+}
+.market[data-template-type=""] > .market-options > .market-option > .value:hover {
+	background-color: #EFCE6F;
+	color: black;
+}
+.blocked > .market-options > .market-option * {
+	cursor: auto !important;
+}
+.blocked > .market-options > .market-option .value:hover {
+	background: rgba(255, 255, 255, 0.05) !important;
+	color: #EFCE6F !important;
 }
 @media screen and (max-width: 768px) {
 	.market:not([data-template-type="91"]) > .market-options > .market-option {
@@ -588,7 +630,8 @@ body {
 				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
 			</div>
 		</div>
-		<!-- <div class="market" data-template-type="" style="order:1">
+		<div class="market" data-template-type="" style="order:1">
+			<div class="divide-horizontal-detail" ></div>
 			<div class="market-title">Default</div>
 			<div class="market-options">
 				<div class="market-option" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
@@ -596,7 +639,7 @@ body {
 				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Option 4</span> <span class="value">4.02</span></div>
 			</div>
-		</div> -->
+		</div>
 	</div>
 
 </div>
