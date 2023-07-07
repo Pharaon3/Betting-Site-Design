@@ -145,6 +145,14 @@ body {
   color: #242424;
 }
 
+.market[data-template-type="83"] > .market-options > .market-option:active, 
+.market[data-template-type="83"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="83"] > .market-options > .market-option:active > *, 
+.market[data-template-type="83"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
 .market[data-template-type="94"] > .market-options > .market-option:active, 
 .market[data-template-type="94"] > .market-options > .market-option:hover {
   background: #EFCE6F;
@@ -358,6 +366,28 @@ body {
 	grid-column-end: 3;
 }
 
+.market[data-template-type="83"] > .market-options {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
+	gap: 10px;
+}
+
+.market[data-template-type="83"] > .market-options > .market-option {
+	background-color: #eee;
+	border-radius: 10px;
+	
+	text-align: center;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	height: 44px;
+	background: rgba(255, 255, 255, 0.05);
+	cursor: pointer;
+}
+
 /* 1: X lines, 4 columns */
 .market[data-template-type="94"] > .market-options {
 	display: grid;
@@ -476,6 +506,16 @@ body {
 	.market:not([data-template-type="91"], [data-template-type=""]) > .market-options > .market-option {
 		flex-direction: column;
 		gap:4px !important;
+	}
+	
+	.market[data-template-type="83"] > .market-options {
+		grid-template-columns: auto auto;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.market[data-template-type="83"] > .market-options {
+		grid-template-columns: auto;
 	}
 }
 
@@ -628,6 +668,18 @@ body {
 				<div class="market-option blocked" data-template-type="1"><span class="title">Option 1</span> <span class="value">1.02</span></div>
 				<div class="market-option" data-template-type="2"><span class="title">Option 2</span> <span class="value">2.02</span></div>
 				<div class="market-option" data-template-type="3"><span class="title">Option 3</span> <span class="value">3.02</span></div>
+			</div>
+		</div>
+		<div class="market" data-template-type="83">
+			<div class="divide-horizontal-detail" ></div>
+			<div class="market-title">3 columns layout <i>(responsive)</i></div>
+			<div class="market-options">
+				<div class="market-option" ><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option" ><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option" ><span class="title">Option 3</span> <span class="value">3.02</span></div>
+				<div class="market-option"><span class="title">Option 1</span> <span class="value">1.02</span></div>
+				<div class="market-option"><span class="title">Option 2</span> <span class="value">2.02</span></div>
+				<div class="market-option"><span class="title">Option 3</span> <span class="value">3.02</span></div>
 			</div>
 		</div>
 		<div class="market" data-template-type="" style="order:1">
