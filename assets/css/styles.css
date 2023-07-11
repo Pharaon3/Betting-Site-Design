@@ -1222,11 +1222,14 @@ input:focus {
   cursor: pointer;
 }
 .match-info {
-  height: 357px;
+  /* height: 357px; */
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 34px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* margin-bottom: 34px; */
 }
 .match-info-left {
   max-width: 510px;
