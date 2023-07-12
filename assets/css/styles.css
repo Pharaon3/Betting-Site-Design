@@ -127,7 +127,7 @@ body {
   display: inline;
 }
 
-.breadcrumb li:not(:first-child)::before, span:not(:first-child)::before {
+.breadcrumb li:not(:first-child)::before, .breadcrumb span:not(:first-child)::before {
   content: '/';
   margin: 0 5px;
 }
@@ -1562,14 +1562,15 @@ input:focus {
 .policy-term a {
   font-weight: bold;
 }
-/* Log in classes end */
-/* @media screen and (max-width: 1495px) {
-  .logo {
-    width: 100%;
-    min-width: 50px;
-    height: 50px;
-  }
-} */
+.directionColumCenter {
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column; 
+  align-items: center;
+}
+.scoreTable {
+  width: 400px;
+}
 @media screen and (max-width: 1300px) {
   
   .game-title {
@@ -1693,7 +1694,7 @@ input:focus {
     gap: 0px;
   }
   .match-info {
-    display: block;
+    /* display: block; */
     height: 100%;
   }
   .match-info-left {
@@ -1722,6 +1723,9 @@ input:focus {
     flex-direction: row;
     gap: 20px;
   }
+  .scoreTable {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   .match-info-right {
@@ -1737,5 +1741,540 @@ input:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+}
+
+
+.divide-horizontal-detail {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 5px 0px;
+}
+.markets {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open sans';
+  
+  border-radius: 10px;
+  background: #1c2023;
+  padding: 20px;
+  gap: 20px;
+}
+.market-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.32px;
+
+  color: #FFFFFF;
+  padding-bottom: 17.6px;
+}
+
+.markets.blocked {
+  opacity: 0.4;
+}
+
+.market {
+  /* border-bottom: 1px solid #ccc; */
+  /* padding: 16px; */
+  order: 2147483647;
+  
+  background: #1c2023;
+}
+
+.market.blocked {
+  opacity: 0.4;
+}
+
+.market-option.blocked {
+  opacity: 0.4;
+}
+
+.market-options {
+  display: flex;
+}
+
+.market-option.removed {
+  visibility: hidden;
+}
+
+.market-option > .title {
+  /* color: #c60; */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+
+.market-option > .value {
+  /* color: #34f; */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #EFCE6F;
+}
+
+.market[data-template-type="12"] > .market-options > .market-option:active, 
+.market[data-template-type="12"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="12"] > .market-options > .market-option:active > *, 
+.market[data-template-type="12"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
+
+.market[data-template-type="13"] > .market-options > .market-option:active, 
+.market[data-template-type="13"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="13"] > .market-options > .market-option:active > *, 
+.market[data-template-type="13"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
+
+.market[data-template-type="92"] > .market-options > .market-option:active, 
+.market[data-template-type="92"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="92"] > .market-options > .market-option:active > *, 
+.market[data-template-type="92"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
+
+.market[data-template-type="82"] > .market-options > .market-option:active, 
+.market[data-template-type="82"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="82"] > .market-options > .market-option:active > *, 
+.market[data-template-type="82"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option:active, 
+.market[data-template-type="93"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="93"] > .market-options > .market-option:active > *, 
+.market[data-template-type="93"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
+
+.market[data-template-type="83"] > .market-options > .market-option:active, 
+.market[data-template-type="83"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="83"] > .market-options > .market-option:active > *, 
+.market[data-template-type="83"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
+.market[data-template-type="94"] > .market-options > .market-option:active, 
+.market[data-template-type="94"] > .market-options > .market-option:hover {
+  background: #EFCE6F;
+}
+.market[data-template-type="94"] > .market-options > .market-option:active > *, 
+.market[data-template-type="94"] > .market-options > .market-option:hover > * {
+  color: #242424;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option > .value:active, 
+.market[data-template-type="91"] > .market-options > .market-option > .value:hover {
+  color: #242424;
+  background: #EFCE6F;
+}
+/* 1: One line, 3 columns */
+.market[data-template-type="13"] {
+}
+
+.market[data-template-type="13"] > .market-options {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.market[data-template-type="13"] > .market-options > .market-option {
+  swidth: 33%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 10px;
+  
+  gap:20px;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.05);
+  /* margin-bottom: 4px; */
+  cursor: pointer;
+}
+
+/* 1: One line, 2 columns */
+.market[data-template-type="12"] {
+}
+.market > .market-options {
+  gap: 4px;
+}
+.market[data-template-type="12"] > .market-options > .market-option {
+  swidth: 33%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.05);
+  /* margin-bottom: 4px; */
+  cursor: pointer;
+}
+
+/* 1: X lines, 1 column */
+.market[data-template-type="91"] {
+}
+
+.market[data-template-type="91"] > .market-options {
+  flex-direction: column;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option {
+  display: flex;
+  margin-bottom: 5px;
+  
+  justify-content: space-between;
+  height: 44px;
+  margin: 1.5px 0px;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option.removed {
+  display: none;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option > .title {
+  flex-grow: 1;
+  flex-shrink: 1;
+  
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.32px;
+
+  color: #FFFFFF;
+  padding-left: 30px;
+}
+
+.market[data-template-type="91"] > .market-options > .market-option > .value {
+  background-color: #eee;
+  border-radius: 10px;
+  
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* width: 177px; */
+  /* height: 44px; */
+
+  background: #272B2E;
+  border-radius: 10px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px 1.5px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 50px;
+  user-select: none;
+  width: 20%;
+}
+
+
+/* 1: X lines, 2 columns */
+.market[data-template-type="92"] > .market-options {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.market[data-template-type="92"] > .market-options > .market-option {
+  background-color: #eee;
+  border-radius: 10px;
+  
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.market[data-template-type="92"] > .market-options > .market-option[data-template-type="1"] {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.market[data-template-type="92"] > .market-options > .market-option[data-template-type="2"] {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+/* 1: X lines, 2 columns */
+.market[data-template-type="82"] > .market-options {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.market[data-template-type="82"] > .market-options > .market-option {
+  background-color: #eee;
+  border-radius: 10px;
+  
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+/* 1: X lines, 3 columns */
+.market[data-template-type="93"] > .market-options {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option {
+  background-color: #eee;
+  border-radius: 10px;
+  
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option[data-template-type="1"] {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option[data-template-type="2"] {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.market[data-template-type="93"] > .market-options > .market-option[data-template-type="3"] {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.market[data-template-type="83"] > .market-options {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.market[data-template-type="83"] > .market-options > .market-option {
+  background-color: #eee;
+  border-radius: 10px;
+  
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+/* 1: X lines, 4 columns */
+.market[data-template-type="94"] > .market-options {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option {
+  background-color: #eee;
+  border-radius: 10px;
+  
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="1"] {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="2"] {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="3"] {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.market[data-template-type="94"] > .market-options > .market-option[data-template-type="4"] {
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+
+/* DEFAULT */
+/* 1: X lines, 1 column */
+.market[data-template-type=""] {
+}
+
+.market[data-template-type=""] > .market-options {
+  flex-direction: column;
+}
+
+.market[data-template-type=""] > .market-options > .market-option {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.market[data-template-type=""] > .market-options > .market-option.removed {
+  display: none;
+}
+
+.market[data-template-type=""] > .market-options > .market-option > .title {
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.32px;
+
+  color: #FFFFFF;
+  padding-left: 30px;
+}
+
+.market[data-template-type=""] > .market-options > .market-option > .value {
+  background-color: #eee;
+  border-radius: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* width: 177px; */
+    height: 44px;
+    background: #272B2E;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 1.5px;
+    cursor: pointer;
+    white-space: nowrap;
+    min-width: 50px;
+    user-select: none;
+    width: 20%;
+}
+.market[data-template-type=""] > .market-options > .market-option > .value:hover {
+  background-color: #EFCE6F;
+  color: black;
+}
+.blocked > .market-options > .market-option * {
+  cursor: auto !important;
+}
+.blocked > .market-options > .market-option .value:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #EFCE6F !important;
+}
+@media screen and (max-width: 768px) {
+  .market:not([data-template-type="91"], [data-template-type=""]) > .market-options > .market-option {
+    flex-direction: column;
+    gap:4px !important;
+  }
+  
+  .market[data-template-type="83"] > .market-options {
+    grid-template-columns: auto;
+  }
+  .market[data-template-type="83"] > .market-options > .market-option {
+    flex-direction: row;
+  }
+  .market[data-template-type="82"] > .market-options {
+    grid-template-columns: auto;
+  }
+  .market[data-template-type="82"] > .market-options > .market-option {
+    flex-direction: row;
   }
 }
