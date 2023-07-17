@@ -442,12 +442,12 @@ body {
   width: 343px;
   /* height: 72.23px; */
   display: flex;
-  align-items: baseline;
+  align-items: start;
 }
 .single-card {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: start;
   justify-content: space-between;
   padding: 0px;
   margin-left: 4px;
