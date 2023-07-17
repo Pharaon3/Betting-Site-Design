@@ -254,9 +254,10 @@ body {
 .right-content {
   width: 375px;
   z-index: 100;
-  position: sticky; 
+  position: fixed; 
+  right: 10px;
   height: fit-content; 
-  top: 10px;
+  /* top: 20px; */
 }
 .middle-content > div:not(#match-info-gr) {
   margin-bottom: 10px;
@@ -325,6 +326,9 @@ body {
 
   color: #000000;
   cursor: pointer;
+}
+.right-content-body {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .right-content-body-title {
   display: flex;
