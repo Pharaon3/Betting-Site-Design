@@ -254,6 +254,9 @@ body {
 .right-content {
   width: 375px;
   z-index: 100;
+  position: sticky; 
+  height: fit-content; 
+  top: 10px;
 }
 .middle-content > div {
   margin-bottom: 10px;
@@ -2259,6 +2262,10 @@ input:focus {
   background: rgba(255, 255, 255, 0.05) !important;
   color: #EFCE6F !important;
 }
+iframe.iframe-element {
+  width: 400px;
+  height: 200px;
+}
 @media screen and (max-width: 768px) {
   .market:not([data-template-type="91"], [data-template-type=""]) > .market-options > .market-option {
     flex-direction: column;
@@ -2276,5 +2283,23 @@ input:focus {
   }
   .market[data-template-type="82"] > .market-options > .market-option {
     flex-direction: row;
+  }
+}
+@media screen and (max-width: 468px) and (min-width: 400px) {
+  iframe.iframe-element {
+    width: 100%;
+    height: 200px;
+  }
+  div.iframe-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 399.98px) {
+  iframe.iframe-element {
+    width: 100%;
+    height: initial;
+  }
+  div.iframe-wrapper {
+    width: 100%;
   }
 }
