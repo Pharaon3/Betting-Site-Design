@@ -258,7 +258,13 @@ body {
   height: fit-content; 
   top: 10px;
 }
-.middle-content > div {
+.middle-content > div:not(#match-info-gr) {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #1c2023;
+}
+
+#match-info {
   margin-bottom: 10px;
   border-radius: 10px;
   background: #1c2023;
@@ -531,7 +537,7 @@ body {
 .odds-span {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   /* identical to box height, or 133% */
@@ -2263,14 +2269,21 @@ input:focus {
   color: #EFCE6F !important;
 }
 iframe.iframe-element {
-  width: 400px;
-  height: 200px;
+  width: 638px;
+  height: 366px;
+  overflow: hidden !important; /* Scroll çubuğunu gizler */
 }
 @media screen and (max-width: 768px) {
   .market:not([data-template-type="91"], [data-template-type=""]) > .market-options > .market-option {
     flex-direction: column;
     gap:4px !important;
   }
+
+  iframe.iframe-element {
+  width: 327px;
+  height: 190px;
+  overflow: hidden !important; /* Scroll çubuğunu gizler */
+}
   
   .market[data-template-type="83"] > .market-options {
     grid-template-columns: auto;
@@ -2286,10 +2299,7 @@ iframe.iframe-element {
   }
 }
 @media screen and (max-width: 468px) and (min-width: 400px) {
-  iframe.iframe-element {
-    width: 100%;
-    height: 200px;
-  }
+  
   div.iframe-wrapper {
     width: 100%;
   }
@@ -2297,7 +2307,7 @@ iframe.iframe-element {
 @media screen and (max-width: 399.98px) {
   iframe.iframe-element {
     width: 100%;
-    height: initial;
+    /*height: initial;*/
   }
   div.iframe-wrapper {
     width: 100%;
