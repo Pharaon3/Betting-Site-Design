@@ -254,9 +254,6 @@ body {
 .right-content {
   width: 375px;
   z-index: 100;
-  position: fixed; 
-  height: fit-content; 
-  /* top: 20px; */
 }
 .middle-content > div:not(#match-info-gr) {
   margin-bottom: 10px;
@@ -325,9 +322,6 @@ body {
 
   color: #000000;
   cursor: pointer;
-}
-.right-content-body {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .right-content-body-title {
   display: flex;
@@ -440,14 +434,14 @@ body {
 }
 .betslip-card-container-wrap {
   width: 343px;
-  /* height: 72.23px; */
+  height: 72.23px;
   display: flex;
-  align-items: start;
+  align-items: baseline;
 }
 .single-card {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 0px;
   margin-left: 4px;
@@ -457,7 +451,6 @@ body {
 }
 .single-card-headings {
   display: flex;
-  align-items: flex-start;
 }
 .single-card-heading {
   font-family: "Open Sans";
@@ -504,11 +497,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* padding: 0px 0px 16px; */
+  padding: 0px 0px 16px;
   gap: 4px;
 
   width: 140px;
-  /* height: 72px; */
+  height: 72px;
 }
 .bet-form {
   display: flex;
@@ -541,7 +534,7 @@ body {
 .odds-span {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   /* identical to box height, or 133% */
@@ -772,7 +765,7 @@ input:focus {
   border-bottom: 2px solid #efce6f;
 }
 .middle-content-body {
-  padding: 20px 20px;
+  padding: 20px 86px;
   display: flex;
   flex-direction: column;
   gap: 10px;
