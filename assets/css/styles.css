@@ -6,6 +6,13 @@ body {
   color: white;
   margin: 2px;
 }
+.scrollable {
+  overflow: auto;
+  height: 70vh;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .main-content {
   margin-top: 10px;
   padding-left: 9px;
