@@ -8,7 +8,7 @@ body {
 }
 .scrollable {
   overflow: auto;
-  height: 70vh;
+  height: calc(100vh - 450px);
 }
 ::-webkit-scrollbar {
   display: none;
