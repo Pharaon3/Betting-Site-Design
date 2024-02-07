@@ -15,8 +15,15 @@ function collapse(id){
     else $("#" + id).addClass("sidebar-collapsed");
 }
 function toggleBetslip() {
-    if($("#right-content-body").hasClass('mobile-hidden')) $("#right-content-body").removeClass("mobile-hidden");
-    else $("#right-content-body").addClass("mobile-hidden");
+    if($("#bet-slip-card").hasClass('mobile-hidden')) {
+        $("#bet-slip-card").removeClass("mobile-hidden");
+        $("#bet-slip-staking-card").removeClass("mobile-hidden");
+        $("#bet-button").removeClass("mobile-hidden");
+    } else {
+        $("#bet-slip-card").addClass("mobile-hidden");
+        $("#bet-slip-staking-card").addClass("mobile-hidden");
+        $("#bet-button").addClass("mobile-hidden");
+    }
 }
 function countdown(pagelink="") {
     var interval = setInterval(function () {

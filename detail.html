@@ -414,13 +414,14 @@
           id="right-content-header"
           class="right-content-header"
           onclick="toggleBetslip()"
+          style="display: none;"
         >
           <div class="right-content-header-p">Want to start placing bets?</div>
           <div class="divide-vertical"></div>
           <div id="login" class="login">Log In</div>
         </div>
-        <div id="right-content-body" class="right-content-body mobile-hidden">
-          <div id="right-content-body-title" class="right-content-body-title">
+        <div id="right-content-body" class="right-content-body">
+          <div id="right-content-body-title" class="right-content-body-title" onclick="toggleBetslip()">
             <div id="right-title" class="right-title">
               <div id="round-box" class="round-number">2</div>
               <div id="bet-slip" class="bet-slip">bet slip</div>
@@ -430,7 +431,7 @@
               <img src="./assets/svg/i.svg" />
             </div>
           </div>
-          <div id="bet-slip-card" class="bet-slip-card scrollable">
+          <div id="bet-slip-card" class="bet-slip-card scrollable mobile-hidden">
             <div id="betslip-section-heading" class="betslip-section-heading">
               Singles
             </div>
@@ -723,7 +724,7 @@
               </div>
             </div>
           </div>
-          <div class="bet-slip-card" style="margin-top: 10px;">
+          <div id="bet-slip-staking-card" class="bet-slip-card mobile-hidden" style="margin-top: 10px;">
             <div id="betslip-all-singles" class="betslip-all-singles">
               <div class="betslip-all-singles-title">Stake All Singles</div>
               <div
@@ -748,7 +749,7 @@
               Sorry, unfortunately your picks cannot be parlayed.
             </div>
           </div>
-          <div id="bet-button" class="bet-button">
+          <div id="bet-button" class="bet-button mobile-hidden">
             <div class="bet-button-heading">Log In to Place Bets</div>
             <div class="bet-button-content">Minimum Bet: $0.10</div>
           </div>
