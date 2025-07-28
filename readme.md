@@ -1,4 +1,4 @@
-# Worldcup game
+
 
 ![page1](./screen/page1.png)
 ![page2](./screen/page2.png)
